@@ -24,8 +24,29 @@
   //       if(val!==val2){
   //         return true
   //       }
-  //       throw new Error('Not Equal')
+  //       throw new Error('Equal')
   //     }
   //     return {toBe, notToBe}
   // };
+}
+{
+  // 13. Roman to Integer
+  // const romans={
+  //     I:1,
+  //     V:5,
+  //     X:10,
+  //     L:50,
+  //     C:100,
+  //     D:500,
+  //     M:1000,
+  //     }
+  //    var romanToInt = function(s) {
+  //        let result=0;
+  //        for(let i=0; i < s.length;i++){
+  //            let current=romans[s[i]]
+  //            let next=romans[s[i+1]]
+  //           current < next ? (result -= current) : (result += current);
+  //        }
+  //        return result
+  //    };
 }

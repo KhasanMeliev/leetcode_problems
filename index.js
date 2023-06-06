@@ -1,18 +1,9 @@
-var fibGenerator = function (n) {
-  let curr = 0;
-  let prev = 1;
-  let nextTerm;
-  let array = [];
-  if (n < 1) {
-    return 1;
-  } else {
-    for (let i = 1; i <= n; i++) {
-      array.push(curr);
-      nextTerm = curr + prev;
-      curr = prev;
-      prev = nextTerm;
-    }
+var isPalindrome = function (head) {
+  let arr = [];
+  while (head) {
+    arr.push(head.val);
+    head = head.next;
   }
-  return array;
+  return arr.join("") == arr.reverse().join("");
 };
-fibGenerator(5);
+console.log(isPalindrome([1, 2]));

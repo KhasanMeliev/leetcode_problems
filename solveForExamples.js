@@ -81,3 +81,10 @@
   // };
   // console.log(isValid("(){"));
 }
+{
+  // 326. Power of Three
+  // var isPowerOfThree = function (n) {
+  //   return 3 ** parseInt(Math.log(n) / Math.log(3)) === n;
+  // };
+  // console.log(isPowerOfThree(27));
+}

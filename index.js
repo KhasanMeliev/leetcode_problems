@@ -1,9 +1,8 @@
-var reverseList = function (head) {
-  const reversedArray = [];
-  for (let i = head.length - 1; i >= 0; i--) {
-    const valueAtIndex = head[i];
-    reversedArray.push(valueAtIndex);
-  }
-  return reversedArray;
+var convertTemperature = function (celsius) {
+  let kelvin = 273.15 + celsius;
+  let fahrenheit = celsius * 1.8 + 32;
+  let arr = [kelvin.toFixed(5), fahrenheit.toFixed(5)];
+  return arr;
 };
-console.log(reverseList([1, 2, 3, 4]));
+
+console.log(convertTemperature(36.5));

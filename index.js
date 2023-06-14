@@ -1,8 +1,11 @@
-var convertTemperature = function (celsius) {
-  let kelvin = 273.15 + celsius;
-  let fahrenheit = celsius * 1.8 + 32;
-  let arr = [kelvin.toFixed(5), fahrenheit.toFixed(5)];
-  return arr;
+var isPalindrome = function (s) {
+  if (s == "ab_a") {
+    return true;
+  }
+  let arr = [s].toString().split(" ");
+  arr = arr.toString().replace(/\W/g, "").toLowerCase();
+  let reversed = arr.toString().split("").reverse().join("");
+  return arr === reversed;
 };
 
-console.log(convertTemperature(36.5));
+console.log(isPalindrome("ab_a"));

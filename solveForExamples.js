@@ -129,3 +129,28 @@
   // };
   // console.log(isPalindrome("ab_a"));
 }
+{
+  // 392. Is Subsequence
+  // var isSubsequence = function (s, t) {
+  //   let count = 0;
+  //   for (let i = 0; i < t.length; i++) {
+  //     if (s[count] === t[i]) {
+  //       count++;
+  //     }
+  //   }
+  //   return count === s.length;
+  // };
+  // console.log(isSubsequence("ab", "ahbgdc"));
+}
+{
+  // 2727. Is Object Empty
+  // var isEmpty = function (obj) {
+  //   var size = Object.keys(obj).length;
+  //   if (size === 0) {
+  //     return true;
+  //   }
+  //   return false;
+  // };
+  
+  // console.log(isEmpty([]));
+}

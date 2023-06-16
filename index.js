@@ -1,11 +1,9 @@
-var isPalindrome = function (s) {
-  if (s == "ab_a") {
+var isEmpty = function (obj) {
+  var size = Object.keys(obj).length;
+  if (size === 0) {
     return true;
   }
-  let arr = [s].toString().split(" ");
-  arr = arr.toString().replace(/\W/g, "").toLowerCase();
-  let reversed = arr.toString().split("").reverse().join("");
-  return arr === reversed;
+  return false;
 };
 
-console.log(isPalindrome("ab_a"));
+console.log(isEmpty([]));

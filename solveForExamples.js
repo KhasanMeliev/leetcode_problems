@@ -151,6 +151,76 @@
   //   }
   //   return false;
   // };
-  
   // console.log(isEmpty([]));
+}
+{
+  // 2733. Neither Minimum nor Maximum
+  // var findNonMinOrMax = function (nums) {
+  //   if (nums.length < 3) {
+  //     return -1;
+  //   }
+  //   let sorted = nums.sort((a, b) => a - b);
+  //   return sorted[1];
+  // };
+  // console.log(findNonMinOrMax([2, 4, 25]));
+}
+
+{
+  // 414. Third Maximum Number
+  // var thirdMax = function (nums) {
+  //   nums = [...new Set(nums)];
+  //   let result = nums.sort((a, b) => b - a);
+  //   if (result.length < 3) {
+  //     return result[0];
+  //   }
+  //   return result[2];
+  // };
+  // console.log(thirdMax([2, 3, 3, 1]));
+}
+{
+  // 215. Kth Largest Element in an Array
+  // var findKthLargest = function (nums, k) {
+  //   let s = k - 1;
+  //   nums = nums.sort((a, b) => b - a);
+  //   return nums[s];
+  // };
+  // console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2));
+}
+{
+  // 905. Sort Array By Parity
+  // var sortArrayByParity = function (nums) {
+  //   let newArr = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     nums[i] % 2 == 0 ? newArr.unshift(nums[i]) : newArr.push(nums[i]);
+  //   }
+  //   return newArr;
+  // };
+  // console.log(sortArrayByParity([3, 1, 2, 4]));
+}
+{
+  // 2164. Sort Even and Odd Indices Independently
+  // var sortEvenOdd = function (nums) {
+  //   let even = [];
+  //   let odd = [];
+  //   let result = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (i % 2 == 0) {
+  //       even.push(nums[i]);
+  //     } else {
+  //       odd.push(nums[i]);
+  //     }
+  //   }
+  //   even.sort((a, b) => a - b);
+  //   odd.sort((a, b) => b - a);
+  //   for (let j = 0; j < nums.length / 2; j++) {
+  //     if (even[j]) {
+  //       result.push(even[j]);
+  //     }
+  //     if (odd[j]) {
+  //       result.push(odd[j]);
+  //     }
+  //   }
+  //   return result;
+  // };
+  // console.log(sortEvenOdd([4, 1, 2, 3]));
 }

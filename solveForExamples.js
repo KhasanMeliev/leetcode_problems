@@ -224,3 +224,65 @@
   // };
   // console.log(sortEvenOdd([4, 1, 2, 3]));
 }
+{
+  // 2231. Largest Number After Digit Swaps by Parity
+  // var largestInteger = function (num) {
+  //   let nums = [num]
+  //     .toString()
+  //     .split("")
+  //     .map((str) => Number(str));
+  //   let even = [];
+  //   let odd = [];
+  //   for (i = 0; i < nums.length; i++) {
+  //     nums[i] % 2 == 0 ? even.push(nums[i]) : odd.push(nums[i]);
+  //   }
+  //   odd.sort((a, b) => a - b);
+  //   even.sort((a, b) => a - b);
+  //   const largest = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     nums[i] % 2 == 0 ? largest.push(even.pop()) : largest.push(odd.pop());
+  //   }
+  //   return largest.join("");
+  // };
+  // console.log(largestInteger(1234));
+}
+{
+  // 747. Largest Number At Least Twice of Others
+  // var dominantIndex = function (nums) {
+  //   let arr = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     arr.push(nums[i]);
+  //   }
+  //   arr = arr.sort((a, b) => b - a);
+  //   if (arr[0] / 2 >= arr[1]) {
+  //     return nums.indexOf(arr[0]);
+  //   }
+  //   return -1;
+  // };
+  // console.log(dominantIndex([0, 0, 0, 1]));
+}
+
+{
+  // 2154. Keep Multiplying Found Values by Two
+  // var findFinalValue = function (nums, original) {
+  //   while (nums.includes(original)) {
+  //     original *= 2;
+  //   }
+  //   return original;
+  // };
+  // console.log(findFinalValue([5, 3, 6, 1, 12], 3));
+}
+
+{
+  // 2706. Buy Two Chocolates
+  // var buyChoco = function (prices, money) {
+  //   prices = prices.sort((a, b) => a - b);
+  //   let sum = prices[0] + prices[1];
+  //   if (sum > money) {
+  //     return money;
+  //   } else {
+  //     return money - sum;
+  //   }
+  // };
+  // console.log(buyChoco([98, 54, 6, 34, 66, 63, 52, 39], 62));
+}

@@ -1,25 +1,11 @@
-var sortEvenOdd = function (nums) {
-  let even = [];
-  let odd = [];
-  let result = [];
-  for (let i = 0; i < nums.length; i++) {
-    if (i % 2 == 0) {
-      even.push(nums[i]);
-    } else {
-      odd.push(nums[i]);
-    }
+var buyChoco = function (prices, money) {
+  prices = prices.sort((a, b) => a - b);
+  let sum = prices[0] + prices[1];
+  if (sum > money) {
+    return money;
+  } else {
+    return money - sum;
   }
-  even.sort((a, b) => a - b);
-  odd.sort((a, b) => b - a);
-  for (let j = 0; j < nums.length / 2; j++) {
-    if (even[j]) {
-      result.push(even[j]);
-    }
-    if (odd[j]) {
-      result.push(odd[j]);
-    }
-  }
-  return result;
 };
 
-console.log(sortEvenOdd([4, 1, 2, 3]));
+console.log(buyChoco([98, 54, 6, 34, 66, 63, 52, 39], 62));

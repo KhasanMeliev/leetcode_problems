@@ -286,3 +286,111 @@
   // };
   // console.log(buyChoco([98, 54, 6, 34, 66, 63, 52, 39], 62));
 }
+
+{
+  // 2652. Sum Multiples
+  // var sumOfMultiples = function (n) {
+  //   let sum = 0;
+  //   for (let i = 0; i <= n; i++) {
+  //     if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+  //       sum = sum + i;
+  //     }
+  //   }
+  //   return sum;
+  // };
+  // console.log(sumOfMultiples(10));
+}
+
+{
+  // 273. Integer to English Words
+  // var numberToWords = function (num) {
+  //   const ones = [
+  //     "",
+  //     "One",
+  //     "Two",
+  //     "Three",
+  //     "Four",
+  //     "Five",
+  //     "Six",
+  //     "Seven",
+  //     "Eight",
+  //     "Nine",
+  //   ];
+  //   const oxiriTeen = [
+  //     "Ten",
+  //     "Eleven",
+  //     "Twelve",
+  //     "Thirteen",
+  //     "Fourteen",
+  //     "Fifteen",
+  //     "Sixteen",
+  //     "Seventeen",
+  //     "Eighteen",
+  //     "Nineteen",
+  //   ];
+  //   const tens = [
+  //     "",
+  //     "",
+  //     "Twenty",
+  //     "Thirty",
+  //     "Forty",
+  //     "Fifty",
+  //     "Sixty",
+  //     "Seventy",
+  //     "Eighty",
+  //     "Ninety",
+  //   ];
+  //   const hundred = "Hundred";
+  //   const thousand = "Thousand";
+  //   const million = "Million";
+  //   const billion = "Billion";
+  //   let result = "";
+  //   if (num < 0) {
+  //     return "No Negative number!";
+  //   }
+  //   if (num === 0) {
+  //     return "Zero";
+  //   }
+  //   if (Math.floor(num / 1000000000) > 0) {
+  //     result += numberToWords(Math.floor(num / 1000000000)) + " " + billion + " ";
+  //     num %= 1000000000;
+  //   }
+  //   if (Math.floor(num / 1000000) > 0) {
+  //     result += numberToWords(Math.floor(num / 1000000)) + " " + million + " ";
+  //     num %= 1000000;
+  //   }
+  //   if (Math.floor(num / 1000) > 0) {
+  //     result += numberToWords(Math.floor(num / 1000)) + " " + thousand + " ";
+  //     num %= 1000;
+  //   }
+  //   if (Math.floor(num / 100) > 0) {
+  //     result += numberToWords(Math.floor(num / 100)) + " " + hundred + "";
+  //     num %= 100;
+  //   }
+  //   if (num > 0) {
+  //     if (result != "") {
+  //       result += " ";
+  //     }
+  //     if (num < 10) {
+  //       result = result.trim() + " " + ones[num];
+  //     } else if (num < 20) {
+  //       result = result.trim() + " " + oxiriTeen[num % 10];
+  //     } else {
+  //       result = result.trim() + " " + tens[Math.floor(num / 10)];
+  //       if (num % 10 > 0) {
+  //         result += " " + ones[num % 10];
+  //       }
+  //     }
+  //   }
+  //   return result.trim();
+  // };
+  // console.log(numberToWords(1099));
+}
+
+// {
+//   50. Pow(x, n)
+//   var myPow = function (x, n) {
+//     return Math.pow(x, n).toFixed(5);
+//   };
+//   console.log(myPow(2.0, 10));
+// }

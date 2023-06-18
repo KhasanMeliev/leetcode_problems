@@ -437,3 +437,79 @@
   // };
   // console.log(intToRoman(1994));
 }
+
+{
+  // 263. Ugly Number
+  // var isUgly = function (n) {
+  //   if (n == 1) {
+  //     return true;
+  //   }
+  //   let chances = [2, 3, 5];
+  //   for (let i = 0; i <= chances.length; i++) {
+  //     while (n && n % chances[i] === 0) {
+  //       n = Math.floor(n / chances[i]);
+  //     }
+  //   }
+  //   return n == 1;
+  // };
+  // console.log(isUgly(15));
+}
+{
+  // 507. Perfect Number
+  // var checkPerfectNumber = function (num) {
+  //   let arr = [];
+  //   for (let i = 0; i < num; i++) {
+  //     if (num % i == 0) {
+  //       arr.push(i);
+  //     }
+  //   }
+  //   return arr.reduce((a, b) => a + b, 0) === num;
+  // };
+  // console.log(checkPerfectNumber(28));
+}
+
+{
+  // 728. Self Dividing Numbers
+  // var selfDividingNumbers = function (left, right) {
+  //   let arr = [];
+  //   let arr2 = [];
+  //   for (let j = left; j <= right; j++) {
+  //     arr = [];
+  //     let splited = j
+  //       .toString()
+  //       .split("")
+  //       .map((str) => {
+  //         return Number(str);
+  //       });
+  //     for (let i = 0; i < splited.length; i++) {
+  //       if (j % splited[i] === 0) {
+  //         arr.push(splited[i]);
+  //         if (arr.length === splited.length) {
+  //           arr2.push(j);
+  //         }
+  //       }
+  //     }
+  //   }
+  //   return arr2;
+  // };
+  // console.log(selfDividingNumbers(47, 85));
+}
+
+{
+  // 2520. Count the Digits That Divide a Number
+  // var countDigits = function (num) {
+  //   let arr = [num]
+  //     .toString()
+  //     .split("")
+  //     .map((str) => Number(str));
+  //   let sum = 0;
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (num % arr[i] === 0) {
+  //       sum += 1;
+  //       continue;
+  //     }
+  //   }
+  //   return sum;
+  // };
+  // console.log(countDigits(1248));
+}

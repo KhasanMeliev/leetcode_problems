@@ -1,16 +1,14 @@
-var countDigits = function (num) {
-  let arr = [num]
-    .toString()
-    .split("")
-    .map((str) => Number(str));
-  let sum = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (num % arr[i] === 0) {
-      sum += 1;
-      continue;
-    }
-  }
-  return sum;
+var ArrayWrapper = function (nums) {
+  this.nums = nums;
 };
 
-console.log(countDigits(1248));
+ArrayWrapper.prototype.valueOf = function () {
+  return this.nums.reduce((a, b) => a + b, 0);
+};
+
+ArrayWrapper.prototype.toString = function () {
+  return "[" + this.nums.toString() + "]";
+};
+var wrapper = new ArrayWrapper([1, 2, 3, 4, 5]);
+
+console.log(wrapper.toString());

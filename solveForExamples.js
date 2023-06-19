@@ -527,3 +527,31 @@
   //   var wrapper = new ArrayWrapper([1, 2, 3, 4, 5]);
   // console.log(wrapper.valueOf())
 }
+{
+  // 179. Largest Number
+  // var largestNumber = function (nums) {
+  //   nums.sort((a, b) => {
+  //     let first = a.toString();
+  //     let second = b.toString();
+  //     return parseInt(first + second) > parseInt(second + first) ? -1 : 1;
+  //   });
+  //   if (nums[0] == 0) {
+  //     return "0";
+  //   }
+  //   return nums.join("");
+  // };
+  // console.log(largestNumber([10, 5, 9]));
+}
+{
+  // 287. Find the Duplicate Number
+  // var findDuplicate = function (nums) {
+  //   nums.sort((a, b) => a - b);
+  //   for (let i = 0; i < nums.length - 1; i++) {
+  //     if (nums[i] == nums[i + 1]) {
+  //       return nums[i];
+  //     }
+  //   }
+  //   return -1;
+  // };
+  // console.log(findDuplicate([3, 1, 3, 4, 2]));
+}

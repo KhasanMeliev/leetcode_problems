@@ -1,14 +1,10 @@
-var ArrayWrapper = function (nums) {
-  this.nums = nums;
+var findDuplicate = function (nums) {
+  nums.sort((a, b) => a - b);
+  for (let i = 0; i < nums.length - 1; i++) {
+    if (nums[i] == nums[i + 1]) {
+      return nums[i];
+    }
+  }
+  return -1;
 };
-
-ArrayWrapper.prototype.valueOf = function () {
-  return this.nums.reduce((a, b) => a + b, 0);
-};
-
-ArrayWrapper.prototype.toString = function () {
-  return "[" + this.nums.toString() + "]";
-};
-var wrapper = new ArrayWrapper([1, 2, 3, 4, 5]);
-
-console.log(wrapper.toString());
+console.log(findDuplicate([3, 1, 3, 4, 2]));

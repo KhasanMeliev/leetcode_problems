@@ -555,3 +555,33 @@
   // };
   // console.log(findDuplicate([3, 1, 3, 4, 2]));
 }
+{
+  // 41. First Missing Positive
+  // var firstMissingPositive = function (nums) {
+  //   let min = 1;
+  //   nums.sort((a, b) => a - b);
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (min === nums[i]) {
+  //       min++;
+  //     }
+  //   }
+  //   return min;
+  // };
+  // console.log(firstMissingPositive([1, 2, 4]));
+}
+
+{
+  // 448. Find All Numbers Disappeared in an Array
+  // var findDisappearedNumbers = function (nums) {
+  //   let max = nums.length;
+  //   let arr = [...new Set(nums)];
+  //   let missedNums = [];
+  //   for (let i = 1; i <= max; i++) {
+  //     if (!arr.includes(i)) {
+  //       missedNums.push(i);
+  //     }
+  //   }
+  //   return missedNums;
+  // };
+  // console.log(findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]));
+}

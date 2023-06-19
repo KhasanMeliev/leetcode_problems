@@ -585,3 +585,54 @@
   // };
   // console.log(findDisappearedNumbers([4, 3, 2, 7, 8, 2, 3, 1]));
 }
+{
+  // 442. Find All Duplicates in an Array
+  // var findDuplicates = function (nums) {
+  //   nums.sort((a, b) => a - b);
+  //   return nums.filter((item, index) => nums.indexOf(item) !== index);
+  // };
+  // console.log(findDuplicates([4, 3, 2, 7, 8, 2, 3, 1]));
+}
+{
+  // 4. Median of Two Sorted Arrays
+  // var findMedianSortedArrays = function (nums1, nums2) {
+  //   let merged = nums1.concat(nums2);
+  //   merged.sort((a, b) => {
+  //     return a - b;
+  //   });
+  //   let len = merged.length;
+  //   if (len % 2 === 0) {
+  //     return ((merged[len / 2 - 1] + merged[len / 2]) / 2).toFixed(5);
+  //   } else {
+  //     return merged[(len - 1) / 2].toFixed(5);
+  //   }
+  // };
+  // console.log(findMedianSortedArrays([1, 3], [2, 4]));
+}
+
+{
+  // 628. Maximum Product of Three Numbers
+  // var maximumProduct = function (nums) {
+  //   nums.sort((a, b) => b - a);
+  //   return Math.max(
+  //     nums[0] * nums[1] * nums[2],
+  //     nums[nums.length - 1] * nums[nums.length - 2] * nums[0]
+  //   );
+  // };
+  // console.log(maximumProduct([1, 2, 3, 4]));
+  // console.log(maximumProduct([1, 2, 3]));
+}
+{
+  // 674. Longest Continuous Increasing Subsequence
+  // var findLengthOfLCIS = function (nums) {
+  //   let count = 1;
+  //   let max = 1;
+  //   for (let i = 0; i < nums.length - 1; i++) {
+  //     if (nums[i] < nums[i + 1]) count++;
+  //     else count = 1;
+  //     max = Math.max(count, max);
+  //   }
+  //   return max;
+  // };
+  // console.log(findLengthOfLCIS([1, 3, 5, 4, 7]));
+}

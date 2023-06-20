@@ -636,3 +636,33 @@
   // };
   // console.log(findLengthOfLCIS([1, 3, 5, 4, 7]));
 }
+{
+  // 977. Squares of a Sorted Array
+  // var sortedSquares = function (nums) {
+  //   let positive = nums.map((min) => Math.abs(min));
+  //   positive.sort((a, b) => a - b);
+  //   return positive.map((i) => i ** 2);
+  // };
+  // console.log(sortedSquares([-4, -1, 0, 3, 10]));
+}
+{
+  // 1351. Count Negative Numbers in a Sorted Matrix
+  // var countNegatives = function (grid) {
+  //   let merged = [].concat.apply([], grid);
+  //   let count = 0;
+  //   for (let i = 0; i < merged.length; i++) {
+  //     if (merged[i] < 0) {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(
+  //   countNegatives([
+  //     [4, 3, 2, -1],
+  //     [3, 2, 1, -1],
+  //     [1, 1, -1, -2],
+  //     [-1, -1, -2, -3],
+  //   ])
+  // );
+}

@@ -1,12 +1,19 @@
-var findLengthOfLCIS = function (nums) {
-  let count = 1;
-  let max = 1;
-  for (let i = 0; i < nums.length - 1; i++) {
-    if (nums[i] < nums[i + 1]) count++;
-    else count = 1;
-    max = Math.max(count, max);
+var countNegatives = function (grid) {
+  let merged = [].concat.apply([], grid);
+  let count = 0;
+  for (let i = 0; i < merged.length; i++) {
+    if (merged[i] < 0) {
+      count++;
+    }
   }
-  return max;
+  return count;
 };
 
-console.log(findLengthOfLCIS([1, 3, 5, 4, 7]));
+console.log(
+  countNegatives([
+    [4, 3, 2, -1],
+    [3, 2, 1, -1],
+    [1, 1, -1, -2],
+    [-1, -1, -2, -3],
+  ])
+);

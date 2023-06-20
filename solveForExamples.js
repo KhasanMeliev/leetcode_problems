@@ -696,3 +696,31 @@
   // };
   // console.log(findNumbers([12, 345, 2, 6, 7896]));
 }
+{
+  // 2215. Find the Difference of Two Arrays
+  // var findDifference = function (nums1, nums2) {
+  //   nums1 = new Set(nums1);
+  //   nums2 = new Set(nums2);
+  //   for (let elem of nums1) {
+  //     if (nums2.has(elem)) {
+  //       nums1.delete(elem);
+  //     }
+  //     nums2.delete(elem);
+  //   }
+  //   return [Array.from(nums1), Array.from(nums2)];
+  // };
+  // console.log(findDifference([1, 2, 3, 3], [1, 1, 2, 2]));
+}
+{
+  // 349. Intersection of Two Arrays
+  // var intersection = function (nums1, nums2) {
+  //   let arr = [];
+  //   for (let i = 0; i < nums1.length; i++) {
+  //     if (nums2.includes(nums1[i])) {
+  //       arr.push(nums1[i]);
+  //     }
+  //   }
+  //   return [...new Set(arr)];
+  // };
+  // console.log(intersection([1, 2, 2, 1], [1, 2]));
+}

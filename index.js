@@ -1,19 +1,11 @@
-var countNegatives = function (grid) {
-  let merged = [].concat.apply([], grid);
-  let count = 0;
-  for (let i = 0; i < merged.length; i++) {
-    if (merged[i] < 0) {
-      count++;
+  var findNumbers = function (nums) {
+    let count = 0;
+    for (let i = 0; i < nums.length; i++) {
+      if (nums[i].toString().length % 2 == 0) {
+        count++;
+      }
     }
-  }
-  return count;
-};
+    return count;
+  };
 
-console.log(
-  countNegatives([
-    [4, 3, 2, -1],
-    [3, 2, 1, -1],
-    [1, 1, -1, -2],
-    [-1, -1, -2, -3],
-  ])
-);
+  console.log(findNumbers([12, 345, 2, 6, 7896]));

@@ -666,3 +666,33 @@
   //   ])
   // );
 }
+{
+  // 2529. Maximum Count of Positive Integer and Negative Integer
+  // var maximumCount = function (nums) {
+  //   let pos = 0;
+  //   let neg = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] < 0) {
+  //       neg++;
+  //     }
+  //     if (nums[i] > 0) {
+  //       pos++;
+  //     }
+  //   }
+  //   return pos > neg ? pos : neg;
+  // };
+  // console.log(maximumCount([-3, -2, -1, 0, 0, 1, 2]));
+}
+{
+  // 1295. Find Numbers with Even Number of Digits
+  // var findNumbers = function (nums) {
+  //   let count = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i].toString().length % 2 == 0) {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(findNumbers([12, 345, 2, 6, 7896]));
+}

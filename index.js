@@ -1,16 +1,9 @@
-var countWords = function (words1, words2) {
-  let count = 0;
-  let no;
-  no = words1.filter((elem, index) => {
-    return words1.indexOf(elem) !== index;
-  });
-  delete words1[no];
-  return words1;
+var deleteDuplicates = function (head) {
+  for (let i = 0; i < head.length; i++) {
+    if (head[i] === head[i]) {
+      console.log(head[i]);
+    }
+  }
 };
 
-console.log(
-  countWords(
-    ["leetcode", "is", "amazing", "as", "is", "as"],
-    ["amazing", "leetcode", "is"]
-  )
-);
+console.log(deleteDuplicates([1, 1, 1, 2, 3]));

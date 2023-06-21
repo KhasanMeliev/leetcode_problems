@@ -1,10 +1,9 @@
-var halvesAreAlike = function (s) {
-  let arr = [s].toString().split("");
-  let first = arr.slice(0, arr.length / 2);
-  let second = arr.slice(arr.length / 2);
-  let count1 = first.filter((letter) => "aeiouAEIOU".includes(letter)).length;
-  let count2 = second.filter((letter) => "aeiouAEIOU".includes(letter)).length;
-  return count1 == count2;
+var countConsistentStrings = function (allowed, words) {
+  return words.filter((elem) => {
+    return elem.split("").every((i) => allowed.split("").includes(i));
+  }).length;
 };
 
-console.log(halvesAreAlike("Uo"));
+console.log(
+  countConsistentStrings("abc", ["a", "b", "c", "ab", "ac", "bc", "abc"])
+);

@@ -736,3 +736,50 @@
   // };
   // console.log(halvesAreAlike("Uo"));
 }
+{
+  // 387. First Unique Character in a String
+  // var firstUniqChar = function (s) {
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s.indexOf(s[i]) === s.lastIndexOf(s[i])) {
+  //       return i;
+  //     }
+  //   }
+  //   return -1;
+  // };
+  // console.log(firstUniqChar("loveleetcode"));
+}
+{
+  // 1732. Find the Highest Altitude
+  // var largestAltitude = function (gain) {
+  //   let t = [0];
+  //   let sum = 0;
+  //   for (let i = 0; i < gain.length; i++) {
+  //     sum += gain[i];
+  //     t.push(sum);
+  //   }
+  //   return Math.max.apply(Math, t);
+  // };
+  // console.log(largestAltitude([-4, -3, -2, -1, 4, 3, 2]));
+}
+{
+  // 1662. Check If Two String Arrays are Equivalent
+  // var arrayStringsAreEqual = function (word1, word2) {
+  //   let first = [word1.flat().join("")];
+  //   let second = [word2.flat().join("")];
+  //   for (let i = 0; i < first.length; i++) {
+  //     return first[i] === second[i];
+  //   }
+  // };
+  // console.log(arrayStringsAreEqual(["abc", "d", "defg"], ["abcddefgs"]));
+}
+{
+  // 1684. Count the Number of Consistent Strings
+  // var countConsistentStrings = function (allowed, words) {
+  //   return words.filter((elem) => {
+  //     return elem.split("").every((i) => allowed.split("").includes(i));
+  //   }).length;
+  // };
+  // console.log(
+  //   countConsistentStrings("abc", ["a", "b", "c", "ab", "ac", "bc", "abc"])
+  // );
+}

@@ -1,11 +1,16 @@
-var intersect = function (nums1, nums2) {
-  let arr = [];
-  for (let i = 0; i < nums1.length; i++) {
-    if (nums2.includes(nums1[i])) {
-      arr.push(nums1[i]); 
-    }
-  }
-  return [...new Set(arr)];
+var countWords = function (words1, words2) {
+  let count = 0;
+  let no;
+  no = words1.filter((elem, index) => {
+    return words1.indexOf(elem) !== index;
+  });
+  delete words1[no];
+  return words1;
 };
 
-console.log(intersect([1, 2, 2, 1], [1, 2]));
+console.log(
+  countWords(
+    ["leetcode", "is", "amazing", "as", "is", "as"],
+    ["amazing", "leetcode", "is"]
+  )
+);

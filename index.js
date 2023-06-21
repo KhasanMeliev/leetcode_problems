@@ -1,9 +1,4 @@
-var countConsistentStrings = function (allowed, words) {
-  return words.filter((elem) => {
-    return elem.split("").every((i) => allowed.split("").includes(i));
-  }).length;
+var interpret = function (command) {
+  return command.replaceAll(/\(\)/g, "o").replaceAll(/\(al\)/g, "al");
 };
-
-console.log(
-  countConsistentStrings("abc", ["a", "b", "c", "ab", "ac", "bc", "abc"])
-);
+console.log(interpret("G()()()()(al)"));

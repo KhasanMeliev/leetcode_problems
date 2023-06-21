@@ -783,3 +783,10 @@
   //   countConsistentStrings("abc", ["a", "b", "c", "ab", "ac", "bc", "abc"])
   // );
 }
+{
+  // 1678. Goal Parser Interpretation
+  // var interpret = function (command) {
+  //   return command.replaceAll(/\(\)/g, "o").replaceAll(/\(al\)/g, "al");
+  // };
+  // console.log(interpret("G()()()()(al)"));
+}

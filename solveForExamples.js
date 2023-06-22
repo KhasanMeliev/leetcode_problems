@@ -860,3 +860,20 @@
   // };
   // console.log(findGCD([3, 3]));
 }
+{
+  // 2413. Smallest Even Multiple
+  // var smallestEvenMultiple = function (n) {
+  //   let len = n * 2;
+  //   for (let i = 2; i <= len; i++) {
+  //     if (i % 2 == 0 && i % n == 0) {
+  //       return i;
+  //     }
+  //   }
+  // };
+  // console.log(smallestEvenMultiple(5));
+  //----------Second Way
+  // var smallestEvenMultiple = function (n) {
+  //   return n % 2 === 0 ? n : n * 2;
+  // };
+  // console.log(smallestEvenMultiple(5));
+}

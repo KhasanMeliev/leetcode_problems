@@ -1,14 +1,15 @@
-var findGCD = function (nums) {
-  
-  nums.sort((a, b) => a - b);
-  let min = nums[0];
-  let max = nums[nums.length - 1];
-  let divisor = 0;
-  for (let i = 1; i <= min && i <= max; i++) {
-    if (min % i == 0 && max % i == 0) {
-      divisor = i;
-    }
+var countVowelPermutation = function (n) {
+  if (n === 1) {
+    return 5;
+  } else {
+    return n * 3;
   }
-  return divisor;
 };
-console.log(findGCD([3, 3]));
+
+console.log(countVowelPermutation(3));
+//a = ae, aea, aeae, aeaea
+//e = ea, eae, eaea, eaeae
+//i = ia, ie, io, iu, iai, iei, ioi, iui, iaia, ieie, ioio, iuiu, iaiai, ieiei, ioioi, iuiui,
+//o = oi, ou, oio, ouo, oioi, ouou, oioio, ououo
+//u = ua, uau, uaua, uauau
+12 + 16 + 8 + '36';

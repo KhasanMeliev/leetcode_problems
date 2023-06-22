@@ -790,3 +790,73 @@
   // };
   // console.log(interpret("G()()()()(al)"));
 }
+{
+  // 1903. Largest Odd Number in String
+  // var largestOddNumber = function (num) {
+  //   for (let i = num.length; i >= 0; i--) {
+  //     if (num[i] % 2 === 1) {
+  //       return num.slice(0, i + 1);
+  //     }
+  //   }
+  //   return "";
+  // };
+  // console.log(largestOddNumber("486379402"));
+}
+{
+  // 2264. Largest 3-Same-Digit Number in String
+  // var largestGoodInteger = function (num) {
+  //   let digits = [
+  //     "000",
+  //     "111",
+  //     "222",
+  //     "333",
+  //     "444",
+  //     "555",
+  //     "666",
+  //     "777",
+  //     "888",
+  //     "999",
+  //   ];
+  //   let uniqueDigits = [];
+  //   let nums = [num].toString().split("").join("");
+  //   for (let i = 0; i < digits.length; i++) {
+  //     if (nums.includes(digits[i])) {
+  //       uniqueDigits.push(digits[i]);
+  //     }
+  //   }
+  //   return uniqueDigits.length === 1 || uniqueDigits.length === 0
+  //     ? uniqueDigits.join("")
+  //     : String(Math.max.apply(Math, uniqueDigits));
+  // };
+  // console.log(largestGoodInteger("42352338"));
+}
+{
+  // 1961. Check If String Is a Prefix of Array
+  // var isPrefixString = function (s, words) {
+  //   let str2 = "";
+  //   for (let i = 0; i < words.length; i++) {
+  //     str2 += words[i];
+  //     if (str2 === s) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // };
+  // console.log(isPrefixString("cccc", ["cccccccccc"]));
+}
+{
+  // 1979. Find Greatest Common Divisor of Array
+  // var findGCD = function (nums) {
+  //   nums.sort((a, b) => a - b);
+  //   let min = nums[0];
+  //   let max = nums[nums.length - 1];
+  //   let divisor = 0;
+  //   for (let i = 1; i <= min && i <= max; i++) {
+  //     if (min % i == 0 && max % i == 0) {
+  //       divisor = i;
+  //     }
+  //   }
+  //   return divisor;
+  // };
+  // console.log(findGCD([3, 3]));
+}

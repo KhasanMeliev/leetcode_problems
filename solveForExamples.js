@@ -877,3 +877,16 @@
   // };
   // console.log(smallestEvenMultiple(5));
 }
+{
+  // 2351. First Letter to Appear Twice
+  // var repeatedCharacter = function (s) {
+  //   for (let i = 0; i < s.length; i++) {
+  //     for (let j = 0; j < i; j++) {
+  //       if (s[i] === s[j]) {
+  //         return s[i];
+  //       }
+  //     }
+  //   }
+  // };
+  // console.log(repeatedCharacter("abccbaacz"));
+}

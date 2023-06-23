@@ -1,14 +1,12 @@
-var nextGreatestLetter = function (letters, target) {
-  let res = letters.filter((i) => i !== target);
-  letters.sort((a, b) => a - b);
-  let greater = letters.filter((i) => i > target).sort((a, b) => a - b);
-  for (let i = 0; i < letters.length; i++) {
-    if (greater.length !== 0) {
-      return greater[0];
-    }
-    return letters[0];
+var countSeniors = function (details) {
+  let ages = [];
+  let jins = ["M", "F"];
+  for (let i = 0; i < details.length; i++) {
+    ages.push(details[i][11].concat(details[i][12]));
   }
-
-  return greater;
+  return ages.map((str) => Number(str)).filter((i) => i > 60).length;
 };
-console.log(nextGreatestLetter(["x", "x", "y", "y"], "z"));
+
+console.log(
+  countSeniors(["7868190130M7522", "5303914400F9211", "9273338290F4010"])
+);

@@ -890,3 +890,35 @@
   // };
   // console.log(repeatedCharacter("abccbaacz"));
 }
+{
+  // 2239. Find Closest Number to Zero
+  // var findClosestNumber = function (nums) {
+  //   let closest = nums[0];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (
+  //       Math.abs(nums[i]) < Math.abs(closest) ||
+  //       (Math.abs(nums[i]) === Math.abs(closest) && nums[i] > 0)
+  //     ) {
+  //       closest = nums[i];
+  //     }
+  //   }
+  //   return closest;
+  // };
+  // console.log(findClosestNumber([-4, -2]));
+}
+{
+  // 744. Find Smallest Letter Greater Than Target
+  // var nextGreatestLetter = function (letters, target) {
+  //   let res = letters.filter((i) => i !== target);
+  //   letters.sort((a, b) => a - b);
+  //   let greater = letters.filter((i) => i > target).sort((a, b) => a - b);
+  //   for (let i = 0; i < letters.length; i++) {
+  //     if (greater.length !== 0) {
+  //       return greater[0];
+  //     }
+  //     return letters[0];
+  //   }
+  //   return greater;
+  // };
+  // console.log(nextGreatestLetter(["x", "x", "y", "y"], "z"));
+}

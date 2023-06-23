@@ -1,11 +1,14 @@
-var repeatedCharacter = function (s) {
-  for (let i = 0; i < s.length; i++) {
-    for (let j = 0; j < i; j++) {
-      if (s[i] === s[j]) {
-        return s[i];
-      }
+var nextGreatestLetter = function (letters, target) {
+  let res = letters.filter((i) => i !== target);
+  letters.sort((a, b) => a - b);
+  let greater = letters.filter((i) => i > target).sort((a, b) => a - b);
+  for (let i = 0; i < letters.length; i++) {
+    if (greater.length !== 0) {
+      return greater[0];
     }
+    return letters[0];
   }
-};
 
-console.log(repeatedCharacter("abccbaacz"));
+  return greater;
+};
+console.log(nextGreatestLetter(["x", "x", "y", "y"], "z"));

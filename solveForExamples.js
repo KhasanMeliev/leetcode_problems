@@ -935,3 +935,65 @@
   //   countSeniors(["7868190130M7522", "5303914400F9211", "9273338290F4010"])
   // );
 }
+{
+  // 2605. Form Smallest Number From Two Digit Arrays
+  // var minNumber = function (nums1, nums2) {
+  //   let smallest = [];
+  //   for (let i = 0; i < nums1.length; i++) {
+  //     if (nums2.includes(nums1[i])) {
+  //       smallest.push(nums1[i]);
+  //     }
+  //   }
+  //   if (smallest.length > 0) {
+  //     return Math.min.apply(Math, smallest);
+  //   }
+  //   let sNums1 = Math.min.apply(Math, nums1);
+  //   let sNums2 = Math.min.apply(Math, nums2);
+  //   return parseInt(
+  //     sNums1 < sNums2 ? sNums1 + "" + sNums2 : sNums2 + "" + sNums1
+  //   );
+  // };
+  // console.log(minNumber([1, 3, 7], [4, 5]));
+}
+{
+  // 2553. Separate the Digits in an Array
+  // var separateDigits = function (nums) {
+  //   let s = [];
+  //   return nums
+  //     .toString()
+  //     .split("")
+  //     .map((s) => Number(s))
+  //     .filter(function (value) {
+  //       return !Number.isNaN(value);
+  //     });
+  // };
+  // console.log(separateDigits([13, 25, 83, 77]));
+}
+{
+  // 682. Baseball Game
+  // var calPoints = function (ops) {
+  //   let arr = [];
+  //   for (let i = 0; i < ops.length; i++) {
+  //     if (ops[i] === "C") {
+  //       arr.pop();
+  //     } else if (ops[i] === "D") {
+  //       arr.push(arr[arr.length - 1] * 2);
+  //     } else if (ops[i] === "+") {
+  //       arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+  //     } else {
+  //       arr.push(parseInt(ops[i]));
+  //     }
+  //   }
+  //   return arr.reduce((a, b) => a + b, 0);
+  // };
+  // console.log(calPoints(["5", "2", "C", "D", "+"]));
+}
+{
+  // 575. Distribute Candies
+  // var distributeCandies = function (candyType) {
+  //   let half = Math.floor(candyType.length / 2);
+  //   let duplicated = Array.from(new Set(candyType));
+  //   return duplicated.length > half ? half : duplicated.length;
+  // };
+  // console.log(distributeCandies([1, 1, 1, 1, 2, 2, 2, 3, 3, 3]));
+}

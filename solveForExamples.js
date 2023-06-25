@@ -1010,3 +1010,6 @@
   // };
   // console.log(chunk([1, 2, 3, 4, 5, 6], 3));
 }
+{
+  // 2455. Average Value of Even Numbers That Are Divisible by Three
+}

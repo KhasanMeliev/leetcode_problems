@@ -1,10 +1,15 @@
-var chunk = function (arr, size) {
-  let chunkedArr = [];
-  let i = 0;
-  while (i < arr.length) {
-    chunkedArr.push(arr.slice(i, i + size));
-    i += size;
+var averageValue = function (nums) {
+  let divisible = [];
+  for (let i = 0; i <= nums.length; i++) {
+    if (nums[i] % 3 === 0) {
+      divisible.push(nums[i]);
+    }
   }
-  return chunkedArr;
+
+  divisible.shift();
+  divisible.pop();
+  return divisible.length >= 2
+    ? divisible.reduce((a, b) => a + b, 0) / divisible.length
+    : 0;
 };
-console.log(chunk([1, 2, 3, 4, 5, 6], 3));
+console.log(averageValue([1, 9, 10]));

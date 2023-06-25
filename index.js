@@ -1,6 +1,10 @@
-var distributeCandies = function (candyType) {
-  let half = Math.floor(candyType.length / 2);
-  let duplicated = Array.from(new Set(candyType));
-  return duplicated.length > half ? half : duplicated.length;
+var chunk = function (arr, size) {
+  let chunkedArr = [];
+  let i = 0;
+  while (i < arr.length) {
+    chunkedArr.push(arr.slice(i, i + size));
+    i += size;
+  }
+  return chunkedArr;
 };
-console.log(distributeCandies([1, 1, 1, 1, 2, 2, 2, 3, 3, 3]));
+console.log(chunk([1, 2, 3, 4, 5, 6], 3));

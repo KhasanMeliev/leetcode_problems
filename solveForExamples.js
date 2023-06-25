@@ -997,3 +997,16 @@
   // };
   // console.log(distributeCandies([1, 1, 1, 1, 2, 2, 2, 3, 3, 3]));
 }
+{
+  // 2677. Chunk Array
+  // var chunk = function (arr, size) {
+  //   let chunkedArr = [];
+  //   let i = 0;
+  //   while (i < arr.length) {
+  //     chunkedArr.push(arr.slice(i, i + size));
+  //     i += size;
+  //   }
+  //   return chunkedArr;
+  // };
+  // console.log(chunk([1, 2, 3, 4, 5, 6], 3));
+}

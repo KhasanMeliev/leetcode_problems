@@ -1028,3 +1028,69 @@
   // };
   // console.log(minDeletionSize(["cba", "daf", "ghi"]));
 }
+{
+  // 976. Largest Perimeter Triangle
+  // var largestPerimeter = function (nums) {
+  //   nums.sort((a, b) => b - a);
+  //   for (let i = 0; i < nums.length - 2; i++) {
+  //     let a = nums[i];
+  //     let b = nums[i + 1];
+  //     let c = nums[i + 2];
+  //     if (a < b + c) {
+  //       return a + b + c;
+  //     }
+  //   }
+  //   return 0;
+  // };
+  // console.log(largestPerimeter([1, 2, 1, 10]));
+}
+{
+  // 989. Add to Array-Form of Integer
+  // var addToArrayForm = function (num, k) {
+  //   let sum = BigInt(num.join("")) + BigInt(k);
+  //   return sum
+  //     .toString()
+  //     .split("")
+  //     .map((str) => Number(str));
+  // };
+  // console.log(
+  //   addToArrayForm(
+  //     [1, 2, 6, 3, 0, 7, 1, 7, 1, 9, 7, 5, 6, 6, 4, 4, 0, 0, 6, 3],
+  //     516
+  //   )
+  // );
+}
+{
+  // 1550. Three Consecutive Odds
+  // var threeConsecutiveOdds = function (arr) {
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] % 2 == 1 && arr[i + 1] % 2 == 1 && arr[i + 2] % 2 === 1) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // };
+  // console.log(threeConsecutiveOdds([2, 6, 4, 1]));
+  // console.log(threeConsecutiveOdds([1, 2, 34, 3, 4, 5, 7, 23, 12]));
+}
+{
+  // 2455. Average Value of Even Numbers That Are Divisible by Three
+  // var averageValue = function (nums) {
+  //   let divisors = [];
+  //   nums = nums.filter((i) => i % 2 == 0);
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] % 3 == 0) {
+  //       divisors.push(nums[i]);
+  //     }
+  //   }
+  //   return divisors.length > 0
+  //     ? Math.floor(divisors.reduce((a, b) => a + b, 0) / divisors.length)
+  //     : 0;
+  // };
+  // console.log(
+  //   averageValue([
+  //     94, 65, 82, 40, 79, 74, 92, 84, 37, 19, 16, 85, 20, 79, 25, 89, 55, 67, 84,
+  //     3, 79, 38, 16, 44, 2, 54, 58, 94, 69, 71, 14, 24, 13, 21,
+  //   ])
+  // );
+}

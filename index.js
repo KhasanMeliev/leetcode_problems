@@ -1,15 +1,16 @@
-var averageValue = function (nums) {
-  let divisible = [];
-  for (let i = 0; i <= nums.length; i++) {
-    if (nums[i] % 3 === 0) {
-      divisible.push(nums[i]);
+var minDeletionSize = function (strs) {
+  let count = 0;
+  for (let i = 0; i < strs[0].length; i++) {
+    let str = "";
+    for (let j = 0; j < strs.length; j++) {
+      str += strs[j][i];
+    }
+    let res = str.split("").sort().join("") === str;
+    if (!res) {
+      count += 1;
     }
   }
-
-  divisible.shift();
-  divisible.pop();
-  return divisible.length >= 2
-    ? divisible.reduce((a, b) => a + b, 0) / divisible.length
-    : 0;
+  return count;
 };
-console.log(averageValue([1, 9, 10]));
+
+console.log(minDeletionSize(["cba", "daf", "ghi"]));

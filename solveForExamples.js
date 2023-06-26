@@ -1011,5 +1011,20 @@
   // console.log(chunk([1, 2, 3, 4, 5, 6], 3));
 }
 {
-  // 2455. Average Value of Even Numbers That Are Divisible by Three
+  // 944. Delete Columns to Make Sorted
+  // var minDeletionSize = function (strs) {
+  //   let count = 0;
+  //   for (let i = 0; i < strs[0].length; i++) {
+  //     let str = "";
+  //     for (let j = 0; j < strs.length; j++) {
+  //       str += strs[j][i];
+  //     }
+  //     let res = str.split("").sort().join("") === str;
+  //     if (!res) {
+  //       count += 1;
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(minDeletionSize(["cba", "daf", "ghi"]));
 }

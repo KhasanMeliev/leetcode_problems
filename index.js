@@ -1,18 +1,7 @@
-var averageValue = function (nums) {
-  let divisors = [];
-  nums = nums.filter((i) => i % 2 == 0);
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] % 3 == 0) {
-      divisors.push(nums[i]);
-    }
+var merge = function (nums1, m, nums2, n) {
+  for (let i = m, j = 0; j < n; i++, j++) {
+    nums1[i] = nums2[j];
   }
-  return divisors.length > 0
-    ? Math.floor(divisors.reduce((a, b) => a + b, 0) / divisors.length)
-    : 0;
+  return nums1.sort((a, b) => a - b);
 };
-console.log(
-  averageValue([
-    94, 65, 82, 40, 79, 74, 92, 84, 37, 19, 16, 85, 20, 79, 25, 89, 55, 67, 84,
-    3, 79, 38, 16, 44, 2, 54, 58, 94, 69, 71, 14, 24, 13, 21,
-  ])
-);
+console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));

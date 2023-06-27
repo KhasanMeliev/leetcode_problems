@@ -1,7 +1,7 @@
-var merge = function (nums1, m, nums2, n) {
-  for (let i = m, j = 0; j < n; i++, j++) {
-    nums1[i] = nums2[j];
-  }
-  return nums1.sort((a, b) => a - b);
+var kWeakestRows = function (mat, k) {
+  return mat
+    .map((e, i) => [i, e.reduce((a, b) => a + b, 0)])
+    .sort((a, b) => (a[1] === b[1] ? a[0] - b[0] : a[1] - b[1]))
+    .map((x) => x[0])
+    .slice(0, k);
 };
-console.log(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3));

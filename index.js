@@ -1,7 +1,12 @@
-var kWeakestRows = function (mat, k) {
-  return mat
-    .map((e, i) => [i, e.reduce((a, b) => a + b, 0)])
-    .sort((a, b) => (a[1] === b[1] ? a[0] - b[0] : a[1] - b[1]))
-    .map((x) => x[0])
-    .slice(0, k);
+var delNodes = function (root, to_delete) {
+  let arr = [];
+  for (let i = 0; i < root.length; i++) {
+    if (root[i] !== to_delete[i]) {
+      arr.push(root);
+    } else {
+      return -1;
+    }
+  }
+  return arr;
 };
+console.log(delNodes([1, 2, 3, 4, 5, 6, 7], [3, 5]));

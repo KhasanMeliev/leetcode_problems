@@ -1113,3 +1113,49 @@
   //     .slice(0, k);
   // };
 }
+{
+  // 1331. Rank Transform of an Array
+  // var arrayRankTransform = function (arr) {
+  //   let sortedArr = Array.from(new Set(arr)).sort((a, b) => a - b);
+  //   return arr.map((i) => sortedArr.indexOf(i) + 1);
+  // };
+}
+{
+  // 2089. Find Target Indices After Sorting Array
+  // var targetIndices = function (nums, target) {
+  //   nums.sort((a, b) => a - b);
+  //   let arr = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] === target) {
+  //       arr.push(i);
+  //     }
+  //   }
+  //   return arr;
+  // };
+}
+{
+  // 34. Find First and Last Position of Element in Sorted Array
+  // var searchRange = function (nums, target) {
+  //   nums.sort((a, b) => a - b);
+  //   let arr = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] === target) {
+  //       arr.push(i);
+  //     }
+  //   }
+  //   if (arr.length == 1) {
+  //     return [arr, arr].flat();
+  //   } else if (arr.length > 2) {
+  //     return [arr[0], arr[arr.length - 1]];
+  //   }
+  //   return arr.length > 1 ? arr : [-1, -1];
+  // };
+  // console.log(searchRange([3, 3, 3], 3));
+}
+{
+  // 912. Sort an Array
+  // var sortArray = function (nums) {
+  //   return nums.sort((a, b) => a - b);
+  // };
+  // console.log(sortArray([5, 2, 3, 1]));
+}

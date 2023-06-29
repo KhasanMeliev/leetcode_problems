@@ -1172,3 +1172,39 @@
   // };
   // console.log(findRelativeRanks([5, 4, 3, 2, 1]));
 }
+{
+  // 189. Rotate Array
+  // var rotate = function (nums, k) {
+  //   if (k === nums.length) return nums;
+  //   else if (k > nums.length) k = k % nums.length;
+  //   for (let i = 0; i < k; i++) {
+  //     nums.unshift(nums.pop());
+  //   }
+  //   return nums;
+  // };
+  // console.log(rotate([1, 2, 3, 4, 5, 6, 7], 3));
+}
+{
+  // 2729. Check if The Number is Fascinating
+  // var isFascinating = function (n) {
+  //   let arr = [n, 2 * n, 3 * n].join("");
+  //   return [...arr].sort((a, b) => a - b).join("") === "123456789";
+  // };
+  // console.log(isFascinating(192));
+}
+{
+  // 49. Group Anagrams
+  // var groupAnagrams = function (strs) {
+  //   let obj = {};
+  //   for (let i = 0; i < strs.length; i++) {
+  //     let sorted = strs[i].split("").sort().join("");
+  //     if (obj[sorted]) {
+  //       obj[sorted].push(strs[i]);
+  //     } else {
+  //       obj[sorted] = [strs[i]];
+  //     }
+  //   }
+  //   return Object.values(obj);
+  // };
+  // console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+}

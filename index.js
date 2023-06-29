@@ -1,12 +1,10 @@
-var delNodes = function (root, to_delete) {
-  let arr = [];
-  for (let i = 0; i < root.length; i++) {
-    if (root[i] !== to_delete[i]) {
-      arr.push(root);
-    } else {
-      return -1;
-    }
-  }
-  return arr;
-};
-console.log(delNodes([1, 2, 3, 4, 5, 6, 7], [3, 5]));
+  var findRelativeRanks = function (score) {
+    let sorted = [...score].sort((a, b) => b - a);
+    let medals = ["Gold Medal", "Silver Medal", "Bronze Medal"];
+    let result = sorted.reduce((ranks, point, i) => {
+      ranks[point] = medals[i] || `${i + 1}`;
+      return ranks;
+    }, {});
+    return score.map((s) => result[s]);
+  };
+  console.log(findRelativeRanks([5, 4, 3, 2, 1]));

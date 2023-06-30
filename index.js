@@ -1,14 +1,11 @@
-var groupAnagrams = function (strs) {
-  let obj = {};
-  for (let i = 0; i < strs.length; i++) {
-    let sorted = strs[i].split("").sort().join("");
-    if (obj[sorted]) {
-      obj[sorted].push(strs[i]);
-    } else {
-      obj[sorted] = [strs[i]];
-    }
+var titleToNumber = (columnTitle) => {
+  let sum = 0;
+  let index = 1;
+  for (let i = columnTitle.length - 1; i >= 0; i--) {
+    sum += index * (columnTitle[i].charCodeAt() - 64);
+    index *= 26;
   }
-  return Object.values(obj);
+  return sum;
 };
 
-console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+console.log(titleToNumber("AB"));

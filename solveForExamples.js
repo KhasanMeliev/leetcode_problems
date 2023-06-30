@@ -1208,3 +1208,48 @@
   // };
   // console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
 }
+{
+  // 3. Longest Substring Without Repeating Characters
+  // var lengthOfLongestSubstring = function (s) {
+  //   const map = {};
+  //   let front = 0;
+  //   let back = 0;
+  //   let maxLength = 0;
+  //   for (front; front < s.length; front++) {
+  //     const exist = map[s[front]];
+  //     if (exist !== undefined && back <= exist) {
+  //       back = exist + 1;
+  //     }
+  //     map[s[front]] = front;
+  //     maxLength = Math.max(front - back + 1, maxLength);
+  //   }
+  //   return maxLength;
+  // };
+  // console.log(lengthOfLongestSubstring("pwwkew"));
+}
+{
+  // 168. Excel Sheet Column Title
+  // var convertToTitle = (columnNumber) => {
+  //   let str = "";
+  //   while (columnNumber > 0) {
+  //     columnNumber--;
+  //     str += String.fromCharCode((columnNumber % 26) + 65);
+  //     columnNumber = Math.floor(columnNumber / 26);
+  //   }
+  //   return str.split("").reverse().join("");
+  // };
+  // console.log(convertToTitle(28));
+}
+{
+  // 171. Excel Sheet Column Number
+  // var titleToNumber = (columnTitle) => {
+  //   let sum = 0;
+  //   let index = 1;
+  //   for (let i = columnTitle.length - 1; i >= 0; i--) {
+  //     sum += index * (columnTitle[i].charCodeAt() - 64);
+  //     index *= 26;
+  //   }
+  //   return sum;
+  // };
+  // console.log(titleToNumber("AB"));
+}

@@ -1,11 +1,13 @@
-var titleToNumber = (columnTitle) => {
-  let sum = 0;
-  let index = 1;
-  for (let i = columnTitle.length - 1; i >= 0; i--) {
-    sum += index * (columnTitle[i].charCodeAt() - 64);
-    index *= 26;
-  }
-  return sum;
-};
+var capitalizeTitle = function (title) {
+  let res = title
+    .split(" ")
+    .map((i) => {
+      return i.length <= 2
+        ? i.toLowerCase()
+        : i[0].toUpperCase() + i.slice(1).toLowerCase();
+    })
+    .join(" ");
 
-console.log(titleToNumber("AB"));
+  return res;
+};
+console.log(capitalizeTitle("First leTTeR of EACH Word"));

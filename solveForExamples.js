@@ -1253,3 +1253,13 @@
   // };
   // console.log(titleToNumber("AB"));
 }
+{
+  // 709. To Lower Case
+  // var toLowerCase = function (s) {
+  //   return s.toLowerCase();
+  // };
+  // console.log(toLowerCase("Hello"));
+}
+{
+  // 2129. Capitalize the Title
+}

@@ -1275,3 +1275,49 @@
   // };
   // console.log(capitalizeTitle("First leTTeR of EACH Word"));
 }
+{
+  // 520. Detect Capital
+  // var detectCapitalUse = function (word) {
+  //   if (
+  //     word === word.toUpperCase() ||
+  //     word === word.toLowerCase() ||
+  //     (word[0] === word[0].toUpperCase() &&
+  //       word.slice(1) === word.slice(1).toLowerCase())
+  //   ) {
+  //     return true;
+  //   }
+  //   return false;
+  // };
+}
+{
+  // 415. Add Strings
+  // var addStrings = function (num1, num2) {
+  //   let n1 = BigInt(num1);
+  //   let n2 = BigInt(num2);
+  //   let sum = n1 + n2;
+  //   return sum.toString();
+  // };
+  // console.log(addStrings("11", "123"));
+}
+{
+  // 43. Multiply Strings
+  // var multiply = function (num1, num2) {
+  //   let n1 = BigInt(num1);
+  //   let n2 = BigInt(num2);
+  //   let sum = n1 * n2;
+  //   return sum.toString();
+  // };
+  // console.log(multiply("11", "123"));
+}
+{
+  // 557. Reverse Words in a String III
+  // var reverseWords = function (s) {
+  //   let str = s.split(" ");
+  //   let newArr = [];
+  //   for (let i = 0; i < str.length; i++) {
+  //     newArr.push(str[i].split("").reverse().join(""));
+  //   }
+  //   return newArr.join(" ");
+  // };
+  // console.log(reverseWords("Let's take LeetCode contest"));
+}

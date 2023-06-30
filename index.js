@@ -1,13 +1,9 @@
-var capitalizeTitle = function (title) {
-  let res = title
-    .split(" ")
-    .map((i) => {
-      return i.length <= 2
-        ? i.toLowerCase()
-        : i[0].toUpperCase() + i.slice(1).toLowerCase();
-    })
-    .join(" ");
-
-  return res;
+var reverseWords = function (s) {
+  let str = s.split(" ");
+  let newArr = [];
+  for (let i = 0; i < str.length; i++) {
+    newArr.push(str[i].split("").reverse().join(""));
+  }
+  return newArr.join(" ");
 };
-console.log(capitalizeTitle("First leTTeR of EACH Word"));
+console.log(reverseWords("Let's take LeetCode contest"));

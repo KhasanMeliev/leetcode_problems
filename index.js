@@ -1,9 +1,5 @@
-var reverseWords = function (s) {
-  let str = s.split(" ");
-  let newArr = [];
-  for (let i = 0; i < str.length; i++) {
-    newArr.push(str[i].split("").reverse().join(""));
-  }
-  return newArr.join(" ");
+var maximumNumberOfStringPairs = function(words) {
+  const len = words.length
+  const s = words.map((w) => w.split("").sort().join(""));
+  return len - new Set(s).size
 };
-console.log(reverseWords("Let's take LeetCode contest"));

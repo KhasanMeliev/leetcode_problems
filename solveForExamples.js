@@ -1321,3 +1321,12 @@
   // };
   // console.log(reverseWords("Let's take LeetCode contest"));
 }
+
+{
+  //   Find Maximum Number of String Pairs
+  //   var maximumNumberOfStringPairs = function(words) {
+  //     const len = words.length
+  //     const s = words.map((w) => w.split("").sort().join(""));
+  //     return len - new Set(s).size
+  // };
+}

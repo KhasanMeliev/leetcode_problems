@@ -1,29 +1,11 @@
-var isSumEqual = function (firstWord, secondWord, targetWord) {
-  let nums = {
-    a: 0,
-    b: 1,
-    c: 2,
-    d: 3,
-    e: 4,
-    f: 5,
-    g: 6,
-    h: 7,
-    i: 8,
-    j: 9,
-  };
-  let first = [];
-  let second = [];
-  let third = [];
-  let max = Math.max(firstWord.length, secondWord.length, targetWord.length);
-  for (let i = 0; i < max; i++) {
-    first.push(nums[firstWord[i]]);
-    second.push(nums[secondWord[i]]);
-    third.push(nums[targetWord[i]]);
-  }
+var sortSentence = function (s) {
+  let arr = [s]
+    .toString()
+    .split(" ")
+    .reverse()
+    .map((element, index) => `${element.slice(-1)}${element.slice(0, -1)}`)
+    .sort();
 
-  return (
-    parseInt(first.join("")) + parseInt(second.join("")) ===
-    parseInt(third.join(""))
-  );
+  return arr.map((elem) => elem.slice(1)).join(" ");
 };
-console.log(isSumEqual("d", "b", "aaaaae"));
+console.log(sortSentence("is2 sentence4 This1 a3"));

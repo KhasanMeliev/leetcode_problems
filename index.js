@@ -1,11 +1,10 @@
-var sortSentence = function (s) {
-  let arr = [s]
-    .toString()
-    .split(" ")
-    .reverse()
-    .map((element, index) => `${element.slice(-1)}${element.slice(0, -1)}`)
-    .sort();
-
-  return arr.map((elem) => elem.slice(1)).join(" ");
+var areOccurrencesEqual = function (s) {
+  let map = {};
+  for (let i of s) {
+    map[i] = map[i] + 1 || 1;
+  }
+  let arr = new Set(Object.values(map));
+  return arr.size == 1;
 };
-console.log(sortSentence("is2 sentence4 This1 a3"));
+
+console.log(areOccurrencesEqual("aaabb"));

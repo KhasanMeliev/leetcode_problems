@@ -1390,3 +1390,42 @@
   // };
   // console.log(sortSentence("is2 sentence4 This1 a3"));
 }
+{
+  // 2042. Check if Numbers Are Ascending in a Sentence
+  // var areNumbersAscending = function (s) {
+  //   let nums = s.match(/\d+/g).map((str) => Number(str));
+  //   let isIncreasing = true;
+  //   for (let i = 0; i < nums.length - 1; i++) {
+  //     if (nums[i] >= nums[i + 1]) {
+  //       isIncreasing = false;
+  //       break;
+  //     }
+  //   }
+  //   return isIncreasing;
+  // };
+  // console.log(
+  //   areNumbersAscending("1 box has 3 blue 4 red 6 green and 12 yellow marbles")
+  // );
+}
+{
+  // 2124. Check if All A's Appears Before All B's
+  // var checkString = function (s) {
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s[i] > s[i + 1]) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // };
+}
+{
+  // 1941. Check if All Characters Have Equal Number of Occurrences
+  // var areOccurrencesEqual = function (s) {
+  //   let map = {};
+  //   for (let i of s) {
+  //     map[i] = map[i] + 1 || 1;
+  //   }
+  //   let arr = new Set(Object.values(map));
+  //   return arr.size == 1;
+  // };
+}

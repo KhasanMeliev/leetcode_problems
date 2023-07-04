@@ -1466,3 +1466,15 @@
   //   return result;
   // };
 }
+{
+  // 137. Single Number II
+  // var singleNumber = function (nums) {
+  //   nums = nums.sort((a, b) => a - b);
+  //   for (let i = 0; i < nums.length; i += 3) {
+  //     if (nums[i] !== nums[i + 1]) {
+  //       return nums[i];
+  //     }
+  //   }
+  // };
+  // console.log(singleNumber([0, 1, 0, 1, 0, 1, 99]));
+}

@@ -1,22 +1,11 @@
-var numUniqueEmails = function (emails) {
-  let arr = emails.map((email) => {
-    const kuchukcha = email.indexOf("@");
-    const plus = email.indexOf("+");
-    if (plus > -1 && plus < kuchukcha) {
-      return email.substring(0, plus) + email.substring(kuchukcha);
-    } else {
-      return email;
-    }
-  });
-  for (let i = 0; i < arr.length; i++) {
-    arr = arr.map(
-      (str) =>
-        str.slice(0, str.indexOf("@")).replace(/\./g, "") +
-        str.slice(str.indexOf("@"), str.length)
-    );
-    return [...new Set(arr)].length;
+var kidsWithCandies = function (candies, extraCandies) {
+  let result = [];
+  let max = Math.max(...candies);
+  candies = candies.map((i) => i + extraCandies);
+  for (let i = 0; i < candies.length; i++) {
+    candies[i] >= max ? result.push(true) : result.push(false);
   }
+  return result;
 };
-console.log(
-  numUniqueEmails(["a@leetcode.com", "b@leetcode.com", "c@leetcode.com"])
-);
+
+console.log(kidsWithCandies([2, 3, 5, 1, 3], 3));

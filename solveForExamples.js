@@ -1478,3 +1478,22 @@
   // };
   // console.log(singleNumber([0, 1, 0, 1, 0, 1, 99]));
 }
+{
+  // 2446. Determine if Two Events Have Conflict
+  // var haveConflict = function (event1, event2) {
+  //   return (
+  //     (event1[0] <= event2[0] && event2[0] <= event1[1]) ||
+  //     (event1[0] <= event2[1] && event2[1] <= event1[1]) ||
+  //     (event2[0] <= event1[0] && event1[0] <= event2[1]) ||
+  //     (event2[0] <= event1[1] && event1[1] <= event2[1])
+  //   );
+  // };
+  // console.log(haveConflict(["01:15", "02:00"], ["02:00", "03:00"]));
+}
+{
+  // 1913. Maximum Product Difference Between Two Pairs
+  // var maxProductDifference = function (nums) {
+  //   nums = nums.sort((a, b) => b - a);
+  //   return nums[0] * nums[1] - nums[nums.length - 1] * nums[nums.length - 2];
+  // };
+}

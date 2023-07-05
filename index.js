@@ -1,9 +1,17 @@
-var kidsWithCandies = function (candies, extraCandies) {
-  let result = [];
-  let max = Math.max(...candies);
-  candies = candies.map((i) => i + extraCandies);
-  for (let i = 0; i < candies.length; i++) {
-    candies[i] >= max ? result.push(true) : result.push(false);
+var sortColors = function (nums) {
+  let nol = [];
+  let one = [];
+  let two = [];
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] == 0) {
+      nol.push(nums[i]);
+    } else if (nums[i] == 1) {
+      one.push(nums[i]);
+    } else {
+      two.push(nums[i]);
+    }
   }
-  return result;
+
+  return [nol, one, two].flat();
 };
+console.log(sortColors([2, 0, 2, 1, 1, 0]));

@@ -1,39 +1,9 @@
-var vowelStrings = function (words, queries) {
-  let vowels = ["a", "e", "i", "o", "u"];
-  let count = 0;
+var kidsWithCandies = function (candies, extraCandies) {
   let result = [];
-  let answer = [];
-  for (let i = 0; i < queries.length; i++) {
-    result.push(words.slice(queries[i][0], queries[i][1] + 1));
+  let max = Math.max(...candies);
+  candies = candies.map((i) => i + extraCandies);
+  for (let i = 0; i < candies.length; i++) {
+    candies[i] >= max ? result.push(true) : result.push(false);
   }
-  // for (let j = 0; j < result.length; j++) {
-  // if (result[j].join(" ").includes(words[j])) {
-  //   answer.push(result[j]);
-  // } else {
-  //   answer.push(0);
-  // }
-  // };
-  // return answer;
-
- 
+  return result;
 };
-console.log(
-  vowelStrings(
-    ["aba", "bcb", "ece", "aa", "e"],
-    [
-      [0, 2],
-      [1, 4],
-      [1, 1],
-    ]
-  )
-);
-// console.log(
-//   vowelStrings(
-//     ["a", "e", "i"],
-//     [
-//       [0, 2],
-//       [0, 1],
-//       [2, 2],
-//     ]
-//   )
-// );

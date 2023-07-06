@@ -1,11 +1,9 @@
-var kthFactor = function (n, k) {
-  let divisors = [];
-  for (let i = 0; i <= n; i++) {
-    if (n % i == 0) {
-      divisors.push(i);
-    }
+var isSameAfterReversals = function (num) {
+  if (num == 0 || num % 10 !== 0) {
+    return true;
   }
-  return divisors.length >= k ? divisors[k - 1] : -1;
+  return false;
 };
 
-console.log(kthFactor(7, 2));
+console.log(isSameAfterReversals(526));
+console.log(isSameAfterReversals(1800));

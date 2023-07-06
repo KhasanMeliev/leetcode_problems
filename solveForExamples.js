@@ -1509,3 +1509,20 @@
   //   return divisors.length >= k ? divisors[k - 1] : -1;
   // };
 }
+{
+  // 2119. A Number After a Double Reversal
+  // var isSameAfterReversals = function (num) {
+  //   let reversed = [num].toString().split("").reverse().join("");
+  //   let secondReversed = parseInt(reversed);
+  //   return (
+  //     parseInt(secondReversed.toString().split("").reverse().join("")) === num
+  //   );
+  // };
+  // -----------second way------------------
+  // var isSameAfterReversals = function (num) {
+  //   if (num == 0 || num % 10 !== 0) {
+  //     return true;
+  //   }
+  //   return false;
+  // };
+}

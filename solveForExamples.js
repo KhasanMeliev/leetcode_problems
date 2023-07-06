@@ -1526,3 +1526,37 @@
   //   return false;
   // };
 }
+{
+  // 1281. Subtract the Product and Sum of Digits of an Integer
+  // var subtractProductAndSum = function (n) {
+  //   let arr = [n]
+  //     .toString()
+  //     .split("")
+  //     .map((str) => Number(str));
+  //   let multiply = 1;
+  //   let sum = 0;
+  //   for (let i = 0; i < arr.length; i++) {
+  //     multiply = multiply * arr[i];
+  //     sum = sum += arr[i];
+  //   }
+  //   return multiply - sum;
+  // };
+  // console.log(subtractProductAndSum(234));
+}
+{
+  // 2525. Categorize Box According to Criteria
+  // var categorizeBox = function (length, width, height, mass) {
+  //   let volume = length * width * height;
+  //   let max = Math.max(length, width, height);
+  //   let bulky;
+  //   let heavy;
+  //   if (max >= 10 ** 4) bulky = true;
+  //   if (volume >= 10 ** 9) bulky = true;
+  //   if (mass >= 100) heavy = true;
+  //   if (bulky && heavy) return "Both";
+  //   if (!bulky && heavy) return "Heavy";
+  //   if (bulky && !heavy) return "Bulky";
+  //   else return "Neither";
+  // };
+  // console.log(categorizeBox(100, 35, 700, 300));
+}

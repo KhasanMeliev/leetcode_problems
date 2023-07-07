@@ -1671,3 +1671,39 @@
   //   return res;
   // };
 }
+{
+  // 2011. Final Value of Variable After Performing Operations
+  // var finalValueAfterOperations = function (operations) {
+  //   let result = [];
+  //   for (let i = 0; i < operations.length; i++) {
+  //     if (operations[i] === "--X" || operations[i] === "X--") {
+  //       result.push(-1);
+  //     } else {
+  //       result.push(1);
+  //     }
+  //   }
+  //   return result.reduce((a, b) => a + b, 0);
+  // };
+  // console.log(finalValueAfterOperations(["--X", "X++", "X++"]));
+}
+{
+  // 2629. Function Composition
+  // var compose = function (functions) {
+  //   return (x) => functions.reduceRight((value, f) => f(value), x);
+  // };
+}
+{
+  // 1450. Number of Students Doing Homework at a Given Time
+  // var busyStudent = function (startTime, endTime, queryTime) {
+  //   let students = [];
+  //   let count = 0;
+  //   for (let i = 0; i < startTime.length; i++) {
+  //     students.push([startTime[i], endTime[i]]);
+  //     if (students[i][0] <= queryTime && students[i][1] >= queryTime) {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(busyStudent([4], [4], 5));
+}

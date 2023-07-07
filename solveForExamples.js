@@ -1707,3 +1707,9 @@
   // };
   // console.log(busyStudent([4], [4], 5));
 }
+{
+  // 771. Jewels and Stones
+  // var numJewelsInStones = function (jewels, stones) {
+  //   return stones.split("").filter((letter) => jewels.includes(letter)).length;
+  // };
+}

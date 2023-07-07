@@ -1,10 +1,10 @@
-var addTwoPromises = async function (promise1, promise2) {
-  const [val1, val2] = await Promise.all([promise1, promise2]);
-  return val1 + val2;
+var shuffle = function (nums, n) {
+  let first = nums.slice(0, nums.length / 2);
+  let second = nums.slice(nums.length / 2, nums.length);
+  let res = [];
+  for (let i = 0; i < first.length; i++) {
+    res.push(first[i], second[i]);
+  }
+  return res;
 };
-console.log(
-  addTwoPromises(
-    new Promise((resolve) => setTimeout(() => resolve(10), 50)),
-    new Promise((resolve) => setTimeout(() => resolve(-12), 30))
-  )
-);
+console.log(shuffle([2, 5, 1, 3, 4, 7], 3));

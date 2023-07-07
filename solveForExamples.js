@@ -1611,3 +1611,63 @@
   //   return val1 + val2;
   // };
 }
+{
+  // 1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
+  // var minPartitions = function (n) {
+  //   return Math.max(...n);
+  // };
+}
+{
+  // 2666. Allow One Function Call
+  // var once = function (fn) {
+  //   let called = false;
+  //   return function (...args) {
+  //     if (!called) {
+  //       called = true;
+  //       return fn(...args);
+  //     }
+  //   };
+  // };
+}
+{
+  // 1108. Defanging an IP Address
+  // var defangIPaddr = function (address) {
+  //   let arr = [address].toString().split("");
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] === ".") {
+  //       arr[i] = "[.]";
+  //     }
+  //   }
+  //   return arr.join("");
+  // };
+  // console.log(defangIPaddr("1.1.1.1"));
+}
+{
+  // 890. Find and Replace Pattern
+  // var findAndReplacePattern = function (words, pattern) {
+  //   let patt = patternn(pattern);
+  //   return words.filter((i) => patternn(i) === patt);
+  // };
+  // const patternn = (str) => {
+  //   let result = "";
+  //   for (let i = 0; i < str.length; i++) {
+  //     result += str.indexOf(str[i]);
+  //   }
+  //   return result;
+  // };
+  // console.log(
+  //   findAndReplacePattern(["abc", "deq", "mee", "aqq", "dkd", "ccc"], "abb")
+  // );
+}
+{
+  // 1470. Shuffle the Array
+  // var shuffle = function (nums, n) {
+  //   let first = nums.slice(0, nums.length / 2);
+  //   let second = nums.slice(nums.length / 2, nums.length);
+  //   let res = [];
+  //   for (let i = 0; i < first.length; i++) {
+  //     res.push(first[i], second[i]);
+  //   }
+  //   return res;
+  // };
+}

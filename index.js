@@ -1,11 +1,11 @@
-var countPrefixes = function (words, s) {
-  let arr = [];
-  for (let i = 0; i < words.length; i++) {
-    if (words[i] === s.slice(0, words[i].length)) {
-      arr.push(words[i]);
-    }
+var reversePrefix = function (word, ch) {
+  if (!word.includes(ch)) {
+    return word;
   }
-  return arr.length;
+  return (
+    ch +
+    [word.slice(0, word.indexOf(ch))].toString().split("").reverse().join("") +
+    word.slice(word.indexOf(ch) + 1, word.length)
+  );
 };
-
-console.log(countPrefixes(["a", "b", "c", "ab", "bc", "abc"], "abc"));
+console.log(reversePrefix("abcdefd", "d"));

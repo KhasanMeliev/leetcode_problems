@@ -1713,3 +1713,87 @@
   //   return stones.split("").filter((letter) => jewels.includes(letter)).length;
   // };
 }
+{
+  // 1137. N-th Tribonacci Number
+  // var tribonacci = function (n) {
+  //   let result = [0, 1, 1];
+  //   for (let i = 3; i <= n; i++) {
+  //     result[i] = result[i - 1] + result[i - 2] + result[i - 3];
+  //   }
+  //   return result[n];
+  // };
+  // console.log(tribonacci(25));
+}
+{
+  // 1805. Number of Different Integers in a String
+  // var numDifferentIntegers = function (word) {
+  //   return new Set(word.match(/0(?=\D)|([1-9][0-9]*)|0$/g)).size;
+  // };
+  // console.log(numDifferentIntegers("a123bc34d8ef34"));
+}
+{
+  // 1460. Make Two Arrays Equal by Reversing Subarrays
+  // var canBeEqual = function (target, arr) {
+  //   target = target.sort((a, b) => a - b);
+  //   arr = arr.sort((a, b) => a - b);
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] !== target[i]) return false;
+  //   }
+  //   return true;
+  // };
+  // console.log(canBeEqual([1, 23, 4], [4, 3, 12]));
+}
+{
+  // 2441. Largest Positive Integer That Exists With Its Negative
+  // var findMaxK = function (nums) {
+  //   let positive = nums.filter((elem) => elem > 0).sort((a, b) => a - b);
+  //   let negative = nums.filter((elem) => elem < 0).sort((a, b) => b - a);
+  //   let ans = [];
+  //   for (let i = 0; i <= positive.length; i++) {
+  //     if (negative.includes(-Math.abs(positive[i]))) {
+  //       ans.push(positive[i]);
+  //     }
+  //   }
+  //   return ans.length >= 1 ? Math.max(...ans) : -1;
+  // };
+  // console.log(findMaxK([-10, 8, 6, 7, -2, -3]));
+}
+{
+  // 2185. Counting Words With a Given Prefix
+  // var prefixCount = function (words, pref) {
+  //   let count = 0;
+  //   for (let i = 0; i < words.length; i++) {
+  //     if (words[i].slice(0, pref.length) === pref) {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(prefixCount(["pay", "attention", "practice", "attend"], "at"));
+}
+{
+  // 1539. Kth Missing Positive Number
+  // var findKthPositive = function (arr, k) {
+  //   let missingIntegers = [];
+  //   for (let i = 1; i < arr.length + k + 2; i++) {
+  //     if (!arr.includes(i)) {
+  //       missingIntegers.push(i);
+  //     }
+  //   }
+  //   return missingIntegers[k - 1];
+  // };
+  // console.log(findKthPositive([2, 3, 4, 7, 11], 5));
+}
+{
+  // 2255. Count Prefixes of a Given String
+  // var countPrefixes = function (words, s) {
+  //   let arr = [];
+  //   for (let i = 0; i < words.length; i++) {
+  //     if (words[i] === s.slice(0, words[i].length)) {
+  //       arr.push(words[i]);
+  //     }
+  //   }
+  //   return arr.length;
+  // };
+  // console.log(countPrefixes(["a", "b", "c", "ab", "bc", "abc"], "abc"));
+}

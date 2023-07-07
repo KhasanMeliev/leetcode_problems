@@ -1,14 +1,10 @@
-var categorizeBox = function (length, width, height, mass) {
-  let volume = length * width * height;
-  let max = Math.max(length, width, height);
-  let bulky;
-  let heavy;
-  if (max >= 10 ** 4) bulky = true;
-  if (volume >= 10 ** 9) bulky = true;
-  if (mass >= 100) heavy = true;
-  if (bulky && heavy) return "Both";
-  if (!bulky && heavy) return "Heavy";
-  if (bulky && !heavy) return "Bulky";
-  else return "Neither";
+var addTwoPromises = async function (promise1, promise2) {
+  const [val1, val2] = await Promise.all([promise1, promise2]);
+  return val1 + val2;
 };
-console.log(categorizeBox(100, 35, 700, 300));
+console.log(
+  addTwoPromises(
+    new Promise((resolve) => setTimeout(() => resolve(10), 50)),
+    new Promise((resolve) => setTimeout(() => resolve(-12), 30))
+  )
+);

@@ -1560,3 +1560,54 @@
   // };
   // console.log(categorizeBox(100, 35, 700, 300));
 }
+{
+  // 1528. Shuffle String
+  // var restoreString = function (s, indices) {
+  //   let str = [];
+  //   for (let i = 0; i < s.length; i++) {
+  //     str[indices[i]] = s[i];
+  //   }
+  //   return str.join("");
+  // };
+  // console.log(restoreString("codeleet", [4, 5, 6, 7, 0, 2, 1, 3]));
+}
+{
+  // 2024. Maximize the Confusion of an Exam
+  // var maxConsecutiveAnswers = function (answerKey, k) {
+  //   let countT = 0;
+  //   let countF = 0;
+  //   let left = 0;
+  //   let ans = 0;
+  //   for (let i = 0; i < answerKey.length; i++) {
+  //     if (answerKey[i] === "T") countT++;
+  //     else countF++;
+  //     while (Math.min(countF, countT) > k) {
+  //       if (answerKey[left] === "T") countT--;
+  //       else countF--;
+  //       left++;
+  //     }
+  //     ans = Math.max(ans, i + 1 - left);
+  //   }
+  //   return ans;
+  // };
+  // console.log(maxConsecutiveAnswers("TTFF", 2));
+}
+{
+  // 14. Longest Common Prefix
+  // var longestCommonPrefix = function (strs) {
+  //   strs = strs.sort();
+  //   for (let i = 0; i < strs[0].length; i++) {
+  //     if (strs[0][i] !== strs[strs.length - 1][i]) {
+  //       return strs[0].substr(0, i);
+  //     }
+  //   }
+  //   return strs[0];
+  // };
+}
+{
+  // 2723. Add Two Promises
+  // var addTwoPromises = async function (promise1, promise2) {
+  //   const [val1, val2] = await Promise.all([promise1, promise2]);
+  //   return val1 + val2;
+  // };
+}

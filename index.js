@@ -1,11 +1,13 @@
-var reversePrefix = function (word, ch) {
-  if (!word.includes(ch)) {
-    return word;
+var applyOperations = function (nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === nums[i + 1]) {
+      nums[i] = nums[i] * 2;
+      nums[i + 1] = 0;
+    }
   }
-  return (
-    ch +
-    [word.slice(0, word.indexOf(ch))].toString().split("").reverse().join("") +
-    word.slice(word.indexOf(ch) + 1, word.length)
-  );
+  let zero = nums.filter((i) => i === 0);
+  const unZero = nums.filter((i) => i !== 0);
+  return unZero.concat(zero);
 };
-console.log(reversePrefix("abcdefd", "d"));
+
+console.log(applyOperations([1, 2, 2, 1, 1, 0]));

@@ -1912,3 +1912,28 @@
   //   return output.join("");
   // };
 }
+{
+  // 1436. Destination City
+  // var destCity = function (paths) {
+  //   let dest = paths[0][1];
+  //   for (let i = 0; i < paths.length; i++) {
+  //     if (paths[i][0] === dest) {
+  //       dest = paths[i][1];
+  //       i = 0;
+  //     }
+  //   }
+  //   return dest;
+  // };
+}
+{
+  // 1491. Average Salary Excluding the Minimum and Maximum Salary
+  // var average = function (salary) {
+  //   let sorted = salary.sort((a, b) => a - b);
+  //   sorted.pop();
+  //   sorted.shift();
+  //   return (sorted.reduce((a, b) => a + b) / sorted.length).toFixed(5);
+  // };
+}
+{
+  // 1893. Check if All the Integers in a Range Are Covered
+}

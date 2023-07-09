@@ -1827,4 +1827,88 @@
 }
 {
   // 2460. Apply Operations to an Array
+  // var applyOperations = function (nums) {
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] === nums[i + 1]) {
+  //       nums[i] = nums[i] * 2;
+  //       nums[i + 1] = 0;
+  //     }
+  //   }
+  //   let zero = nums.filter((i) => i === 0);
+  //   const unZero = nums.filter((i) => i !== 0);
+  //   return unZero.concat(zero);
+  // };
+}
+{
+  // 219. Contains Duplicate II
+  // var containsNearbyDuplicate = function (nums, k) {
+  //   for (let i = 0; i <= nums.length - 1; i++) {
+  //     let j = nums.length - 1;
+  //     while (i < j) {
+  //       if (nums[i] === nums[j] && Math.abs(i - j) <= k) {
+  //         return true;
+  //       }
+  //       j--;
+  //     }
+  //   }
+  //   return false;
+  // };
+}
+{
+  // 389. Find the Difference
+  // var findTheDifference = function (s, t) {
+  //   for (let letter of s) {
+  //     t = t.replace(letter, "");
+  //   }
+  //   return t;
+  // };
+  // console.log(findTheDifference("abcd", "abcde"));
+}
+{
+  // 434. Number of Segments in a String
+  // var countSegments = function (s) {
+  //   if (s.trim().length === 0) {
+  //     return 0;
+  //   }
+  //   return s
+  //     .toString()
+  //     .split(" ")
+  //     .filter((i) => i !== "").length;
+  // };
+  // console.log(
+  //   countSegments("Of all the gin joints in all the towns in all the world,   ")
+  // );
+}
+{
+  // 844. Backspace String Compare
+  // const func = (str) => {
+  //   let output = [];
+  //   for (let i = 0; i < str.length; i++) {
+  //     if (str[i] === "#") {
+  //       output.pop();
+  //     } else {
+  //       output.push(str[i]);
+  //     }
+  //   }
+  //   return output.join("");
+  // };
+  // var backspaceCompare = function (s, t) {
+  //   return func(s) === func(t);
+  // };
+  // console.log(backspaceCompare("a#c", "b"));
+}
+
+{
+  // 2390. Removing Stars From a String
+  // const removeStars = (s) => {
+  //   let output = [];
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s[i] === "*") {
+  //       output.pop();
+  //     } else {
+  //       output.push(s[i]);
+  //     }
+  //   }
+  //   return output.join("");
+  // };
 }

@@ -7,11 +7,6 @@ var reverseVowels = function (s) {
     }
   }
   arr = arr.reverse();
-  for (let j = 0; j <= s.length; j++) {
-    if (s.includes(vowels[j])) {
-      
-    }
-  }
   return s;
 };
 console.log(reverseVowels("hello"));

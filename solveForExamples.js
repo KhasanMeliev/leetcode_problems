@@ -1937,3 +1937,18 @@
 {
   // 1893. Check if All the Integers in a Range Are Covered
 }
+{
+  // 1768. Merge Strings Alternately
+  // var mergeAlternately = function (word1, word2) {
+  //   let arr = [];
+  //   let big = Math.max(word1.length, word2.length);
+  //   for (let i = 0; i < big; i++) {
+  //     arr.push(word1[i], word2[i]);
+  //   }
+  //   return arr.filter((i) => i !== undefined).join("");
+  // };
+  // console.log(mergeAlternately("abc", "pqr"));
+}
+{
+  // 2645. Minimum Additions to Make Valid String
+}

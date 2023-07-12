@@ -1,52 +1,10 @@
-var addMinimum = function (word) {
-  let count = 0;
-  word = word.toString().split("");
-
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === "a") {
-      if (word[i + 1] === "b") {
-        count += 0;
-      }
-      if (word[i + 1] == "c") {
-        count += 1;
-      } else {
-        count += 2;
-      }
-    }
-    if (word[i] === "b") {
-      if (word[i + 1] === "b") {
-        count += 2;
-      }
-      if (word[i + 1] == "c") {
-        count += 0;
-      } else {
-        count += 1;
-      }
-    }
-    if (word[i] === "c") {
-      if (word[i + 1] === "b") {
-        count += 1;
-      }
-      if (word[i + 1] == "c") {
-        count += 2;
-      } else {
-        count += 0;
-      }
+var increasingTriplet = function (nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] < nums[i + 1] && nums[i + 1] < nums[i + 2]) {
+      return true;
     }
   }
-  if (word.length === 1) {
-    count += 2;
-  } else {
-    if (word[word.length - 1] === "a" || word[0] === "c") {
-      count += 2;
-    }
-    if (word[word.length - 1] === "b" || word[0] === "b") {
-      count += 1;
-    } else {
-      count += 0;
-    }
-  }
-  return count === 0 ? 0 : count;
+  return false;
 };
+console.log(increasingTriplet([20, 100, 10, 12, 5, 13]));
 
-console.log(addMinimum("baaaab"));

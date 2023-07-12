@@ -1951,4 +1951,36 @@
 }
 {
   // 2645. Minimum Additions to Make Valid String
+  // var addMinimum = function (word) {
+  //   let count = 0;
+  //   word = word.toString().split("");
+  //   let last = word[word.length - 1];
+  //   if (word[0] === "a") count += 0;
+  //   if (word[0] === "b") count += 1;
+  //   if (word[0] === "c") count += 2;
+  //   if (last === "a") count += 2;
+  //   if (last === "b") count += 1;
+  //   if (last === "c") count += 0;
+  //   for (let i = 0; i < word.length; i++) {
+  //     if (word[i] === "a") {
+  //       if (word[i + 1] === "b") count += 0;
+  //       if (word[i + 1] === "c") count += 1;
+  //       if (word[i + 1] === "a") count += 2;
+  //     }
+  //     if (word[i] === "b") {
+  //       if (word[i + 1] === "b") count += 2;
+  //       if (word[i + 1] === "c") count += 0;
+  //       if (word[i + 1] === "a") count += 1;
+  //     }
+  //     if (word[i] === "c") {
+  //       if (word[i + 1] === "b") count += 1;
+  //       if (word[i + 1] === "c") count += 2;
+  //       if (word[i + 1] === "a") count += 0;
+  //     }
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 334. Increasing Triplet Subsequence
 }

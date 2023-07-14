@@ -1,6 +1,15 @@
-function totalMoney(n) {
-  const k = Math.floor(n / 7);
-  const x = n % 7;
-  return (7 * k * (k + 7)) / 2 + (x * (2 * k + x + 1)) / 2;
-}
-console.log(totalMoney(20));
+var findSubarrays = function (nums) {
+  let sums = [];
+  if (nums.length <= 2) {
+    return false;
+  }
+  for (let i = 0; i < nums.length; i++) {
+    sums.push(nums[i] + nums[i + 1]);
+  }
+  sums = sums.filter((i) => {
+    return !Number.isNaN(i);
+  });
+  return [...new Set(sums)].length === 1 ? true : false;
+};
+
+console.log(findSubarrays([1, 2, 3, 2, 1]));

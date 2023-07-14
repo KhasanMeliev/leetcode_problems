@@ -1992,3 +1992,20 @@
   //   return time.join("");
   // };
 }
+{
+  // 2496. Maximum Value of a String in an Array
+  // var maximumValue = function (strs) {
+  //   let result = [];
+  //   let max = 0;
+  //   for (let i = 0; i < strs.length; i++) {
+  //     if (/^[a-zA-Z]+$/.test(strs[i])) {
+  //       result.push(strs[i].length);
+  //     } else if (/^\d+$/.test(strs[i])) {
+  //       result.push(parseInt(strs[i]));
+  //     } else {
+  //       result.push(strs[i].length);
+  //     }
+  //   }
+  //   return Math.max(...result);
+  // };
+}

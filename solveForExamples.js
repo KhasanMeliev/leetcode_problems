@@ -2009,3 +2009,128 @@
   //   return Math.max(...result);
   // };
 }
+{
+  // 2032. Two Out of Three
+  // var twoOutOfThree = function (nums1, nums2, nums3) {
+  //   let result = [];
+  //   for (let i = 0; i <= 100; i++) {
+  //     if (
+  //       (nums1.includes(i) && nums2.includes(i)) ||
+  //       (nums1.includes(i) && nums3.includes(i)) ||
+  //       (nums2.includes(i) && nums3.includes(i))
+  //     ) {
+  //       result.push(i);
+  //     }
+  //   }
+  //   return result;
+  // };
+}
+{
+  // 2206. Divide Array Into Equal Pairs
+  // var divideArray = function (nums) {
+  //   nums = nums.sort((a, b) => a - b);
+  //   for (let i = 0; i < nums.length - 1; i += 2) {
+  //     if (nums[i] !== nums[i + 1]) {
+  //       return false;
+  //     }
+  //   }
+  //   return true;
+  // };
+  // console.log(divideArray([3, 2, 3, 2, 2, 2]));
+}
+{
+  // 1780. Check if Number is a Sum of Powers of Three
+  // var checkPowersOfThree = function (n) {
+  //   return !n.toString(3).includes(2);
+  // };
+}
+{
+  // 1360. Number of Days Between Two Dates
+  // var daysBetweenDates = function (date1, date2) {
+  //   return (
+  //     Math.abs(new Date(date1).getTime() - new Date(date2).getTime()) /
+  //     (1000 * 60 * 60 * 24)
+  //   );
+  // };
+}
+{
+  // 1995. Count Special Quadruplets
+  // var countQuadruplets = function (nums) {
+  //   let count = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       for (let k = j + 1; k < nums.length; k++) {
+  //         for (let l = k + 1; l < nums.length; l++) {
+  //           if (nums[i] + nums[j] + nums[k] == nums[l]) {
+  //             count++;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // };
+  // console.log(countQuadruplets([1, 1, 1, 3, 5]));
+}
+{
+  // 1534. Count Good Triplets
+  // var countGoodTriplets = function (arr, a, b, c) {
+  //   let count = 0;
+  //   for (let i = 0; i < arr.length; i++) {
+  //     for (let j = i + 1; j < arr.length; j++) {
+  //       if (Math.abs(arr[i] - arr[j]) > a) continue;
+  //       for (let k = j + 1; k < arr.length; k++) {
+  //         if (Math.abs(arr[j] - arr[k]) > b) continue;
+  //         if (Math.abs(arr[i] - arr[k]) <= c) count++;
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 2475. Number of Unequal Triplets in Array
+  // var unequalTriplets = function (nums) {
+  //   let count = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       for (let k = j + 1; k < nums.length; k++) {
+  //         if (nums[i] !== nums[j] && nums[i] !== nums[k] && nums[j] !== nums[k]) {
+  //           count++;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 2367. Number of Arithmetic Triplets
+  // var arithmeticTriplets = function (nums, diff) {
+  //   let count = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       for (let k = j + 1; k < nums.length; k++) {
+  //         if (nums[j] - nums[i] == diff && nums[k] - nums[j] == diff) count++;
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 1925. Count Square Sum Triples
+  // var countTriples = function (n) {
+  //   let count = 0;
+  //   for (let i = 1; i <= n; i++) {
+  //     for (let j = 1; j <= n; j++) {
+  //       for (let k = 1; k <= n; k++) {
+  //         if (Math.pow(i, 2) + Math.pow(j, 2) == Math.pow(k, 2)) {
+  //           count++;
+  //         }
+  //       }
+  //     }
+  //   }
+  //   return count;
+  // };
+}

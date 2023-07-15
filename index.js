@@ -1,23 +1,12 @@
-var splitNum = function (num) {
-  num = num
-    .toString()
-    .split("")
-    .map((s) => Number(s));
-
-  let even = [];
-  let odd = [];
-  for (let i = 0; i < num.length; i++) {
-    if (num[i] % 2 == 0) even.push(num[i]);
-    else odd.push(num[i]);
+var countTriples = function (n) {
+  let count = 0;
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      const square = Math.sqrt(i * i + j * j);
+      if (Number.isInteger(square) && square <= n) count++;
+    }
   }
-  // if (even.length === 0) {
-  //   return odd.reduce((a, b) => a + b, 0);
-  // }
-  // if (odd.length === 0) {
-  //   return even.reduce((a, b) => a + b, 0);
-  // } else {
-  //   return parseInt(even.sort().join("")) + parseInt(odd.sort().join(""));
-  // }
-  return parseInt(even);
+  return count;
 };
-console.log(splitNum(100001));
+
+console.log(countTriples(5));

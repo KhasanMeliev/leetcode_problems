@@ -2149,3 +2149,45 @@
   //   return minCost;
   // };
 }
+{
+  // 1313. Decompress Run-Length Encoded List
+  // var decompressRLElist = function (nums) {
+  //   let result = [];
+  //   const splited = nums.reduce((acc, curr, index) => {
+  //     if (index % 2 === 0) {
+  //       acc.push([curr]);
+  //     } else {
+  //       acc[acc.length - 1].push(curr);
+  //     }
+  //     return acc;
+  //   }, []);
+  //   for (let i = 0; i < splited.length; i++) {
+  //     result.push(Array(splited[i][0]).fill(splited[i][1]));
+  //   }
+  //   return result.flat();
+  // };
+  // -----second way---------------
+  // var decompressRLElist = function (nums) {
+  //   let result = [];
+  //   for (let i = 0; i < nums.length; i += 2) {
+  //     for (let j = 0; j < nums[i]; j++) {
+  //       result.push(nums[i + 1]);
+  //     }
+  //   }
+  //   return result;
+  // };
+  // console.log(decompressRLElist([1, 2, 3, 4]));
+}
+{
+  // 1184. Distance Between Bus Stops
+  // var distanceBetweenBusStops = function (distance, start, destination) {
+  //   let totalDistance = distance.reduce((a, b) => a + b, 0);
+  //   let clockWiseDistance = 0;
+  //   let begin = Math.min(start, destination);
+  //   let finish = Math.max(start, destination);
+  //   for (let i = begin; i < finish; i++) {
+  //     clockWiseDistance += distance[i];
+  //   }
+  //   return Math.min(clockWiseDistance, totalDistance - clockWiseDistance);
+  // };
+}

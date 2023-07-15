@@ -1,20 +1,12 @@
-var twoCitySchedCost = function (costs) {
-  costs = costs.sort((a, b) => b[0] - b[1] - (a[0] - a[1]));
-  let len = costs.length;
-  let minCost = 0;
-  for (let i = 0; i < len / 2; i++) {
-    minCost += costs[i][1];
+var distanceBetweenBusStops = function (distance, start, destination) {
+  let totalDistance = distance.reduce((a, b) => a + b, 0);
+  let clockWiseDistance = 0;
+  let begin = Math.min(start, destination);
+  let finish = Math.max(start, destination);
+  for (let i = begin; i < finish; i++) {
+    clockWiseDistance += distance[i];
   }
-  for (let i = len / 2; i < len; i++) {
-    minCost += costs[i][0];
-  }
-  return minCost;
+  return Math.min(clockWiseDistance, totalDistance - clockWiseDistance);
 };
-console.log(
-  twoCitySchedCost([
-    [10, 20],
-    [30, 200],
-    [400, 50],
-    [30, 20],
-  ])
-);
+console.log(distanceBetweenBusStops([7, 10, 1, 12, 11, 14, 5, 0], 7, 2));
+console.log(distanceBetweenBusStops([3, 6, 7, 2, 9, 10, 7, 16, 11], 6, 2));

@@ -1,12 +1,15 @@
-var distanceBetweenBusStops = function (distance, start, destination) {
-  let totalDistance = distance.reduce((a, b) => a + b, 0);
-  let clockWiseDistance = 0;
-  let begin = Math.min(start, destination);
-  let finish = Math.max(start, destination);
-  for (let i = begin; i < finish; i++) {
-    clockWiseDistance += distance[i];
+var minimumAbsDifference = function (arr) {
+  let res = [];
+  arr = arr.sort((a, b) => a - b);
+  let min = [];
+  for (let i = 0; i <= arr.length; i++) {
+    min.push(arr[i + 1] - arr[i]);
+    if (arr[i] < arr[i + 1] && arr[i + 1] - arr[i] === Math.min(...min)) {
+      res.push([arr[i], arr[i + 1]]);
+    }
   }
-  return Math.min(clockWiseDistance, totalDistance - clockWiseDistance);
+  return Math.min(...min);
 };
-console.log(distanceBetweenBusStops([7, 10, 1, 12, 11, 14, 5, 0], 7, 2));
-console.log(distanceBetweenBusStops([3, 6, 7, 2, 9, 10, 7, 16, 11], 6, 2));
+console.log(minimumAbsDifference([1, 3, 6, 10, 15]));
+console.log(minimumAbsDifference([40, 11, 26, 27, -20]));
+// -20,11,26,27,40

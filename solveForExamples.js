@@ -2263,3 +2263,27 @@
   //   };
   //   console.log(triangleNumber([24, 3, 82, 22, 35, 84, 19]));
 }
+{
+  // 633. Sum of Square Numbers
+  // var judgeSquareSum = function (c) {
+  //   for (let i = 0; i < Math.sqrt(c); i++) {
+  //     const b = Math.sqrt(c - i * i);
+  //     if ((b ^ 0) == b) return true;
+  //   }
+  //   return false;
+  // };
+  // console.log(judgeSquareSum(4));
+}
+{
+  // 367. Valid Perfect Square
+  // var isPerfectSquare = function (num) {
+  //   if (num == 1) return true;
+  //   for (let i = 0; i < num; i++) {
+  //     if (i * i == num) {
+  //       return true;
+  //     }
+  //   }
+  //   return false;
+  // };
+  // console.log(isPerfectSquare(16));
+}

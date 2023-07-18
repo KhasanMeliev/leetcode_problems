@@ -1,21 +1,6 @@
-var findJudge = function (n, trust) {
-  let arr = [];
-  for (let i = 0; i < trust.length; i++) {
-    if (trust.length === 1 && trust[1] === n) {
-      arr.push(trust[0]);
-    }
-    if (trust[i][1] === n) {
-      arr.push(true);
-    }
-  }
-  return arr.length === trust.length ? n : -1;
+var getSum = function (a, b) {
+  const nums = [a, b];
+  return nums.reduce((a, b) => a + b, 0);
 };
-console.log(
-  findJudge(4, [
-    [1, 3],
-    [1, 4],
-    [2, 3],
-    [2, 4],
-    [4, 3],
-  ])
-);
+
+console.log(getSum(2, 3));

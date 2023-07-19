@@ -2297,3 +2297,25 @@
   //   return count;
   // };
 }
+{
+  // 1446. Consecutive Characters
+  // var maxPower = function (s) {
+  //   s = s.split("");
+  //   let biggest = 0;
+  //   let count = 0;
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s[i] === s[i + 1]) {
+  //       count++;
+  //     } else {
+  //       count++;
+  //       biggest = Math.max(count, biggest);
+  //       count = 0;
+  //     }
+  //   }
+  //   return biggest;
+  // };
+  // console.log(maxPower("abbcccddddeeeeedcba"));
+}
+{
+  // 485. Max Consecutive Ones
+}

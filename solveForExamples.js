@@ -2287,3 +2287,13 @@
   // };
   // console.log(isPerfectSquare(16));
 }
+{
+  // 1967. Number of Strings That Appear as Substrings in Word
+  // var numOfStrings = function (patterns, word) {
+  //   let count = 0;
+  //   for (let ptrn of patterns) {
+  //     if (word.includes(ptrn)) count++;
+  //   }
+  //   return count;
+  // };
+}

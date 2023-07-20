@@ -2237,7 +2237,7 @@
 {
   // 479. Largest Palindrome Product
   // var largestPalindrome = function (n) {
-  //   return [0, 9, 987, 123, 597, 677, 1218, 877, 475][n];
+  //   return [0, 9, 987, 123, 597, 677, 1218, 877, 475][n];x`
   // };
 }
 {
@@ -2318,4 +2318,21 @@
 }
 {
   // 485. Max Consecutive Ones
+  // var findMaxConsecutiveOnes = function (nums) {
+  //   let biggest = 0;
+  //   let count = 0;
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (!nums.includes(1)) {
+  //       return 0;
+  //     }
+  //     if (nums[i] === nums[i + 1] && nums[i] !== 0) {
+  //       count++;
+  //     } else {
+  //       count++;
+  //       biggest = Math.max(count, biggest);
+  //       count = 0;
+  //     }
+  //   }
+  //   return biggest;
+  // };
 }

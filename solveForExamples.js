@@ -2350,3 +2350,52 @@
   //   return count;
   // };
 }
+{
+  {
+    {
+      {
+        {
+          {
+          }
+        }
+      }
+    }
+  }
+}
+{
+  // 2325. Decode the Message
+  // var replaceDigits = function (s) {
+  //   let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  //   let ans = [];
+  //   let res = [];
+  //   for (let i = 0; i < alphabet.length; i++) {
+  //     if (alphabet.includes(s[i])) {
+  //       ans.push(s[i]);
+  //     } else {
+  //       ans.push(alphabet.indexOf(s[i - 1]));
+  //     }
+  //   }
+  //   ans = ans.filter((i) => i !== -1);
+  //   for (let i = 0; i < ans.length; i++) {
+  //     if (alphabet.includes(ans[i])) {
+  //       res.push(ans[i]);
+  //     } else {
+  //       res.push(alphabet[i]);
+  //     }
+  //   }
+  //   return res.join("");
+  // };
+  // console.log(replaceDigits("a1b2c3d4e"));
+}
+{
+  // 2108. Find First Palindromic String in the Array
+  // var firstPalindrome = function (words) {
+  //   let palindromes = [];
+  //   for (let i = 0; i < words.length; i++) {
+  //     if (words[i] === words[i].toString().split("").reverse().join("")) {
+  //       palindromes.push(words[i]);
+  //     }
+  //   }
+  //   return palindromes[0];
+  // };
+}

@@ -1,13 +1,10 @@
-var numIdenticalPairs = function (nums) {
-  let count = 0;
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] === nums[j]) {
-        count++;
+var firstPalindrome = function (words) {
+      let palindromes = [];
+      for (let i = 0; i < words.length; i++) {
+        if (words[i] === words[i].toString().split("").reverse().join("")) {
+          palindromes.push(words[i]);
+        }
       }
-    }
-  }
-  return count;
-};
-
-console.log(numIdenticalPairs([1, 1, 1, 1]));
+      return palindromes.length > 0 ? palindromes[0] : "";
+    };
+    

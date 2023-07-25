@@ -2350,3 +2350,67 @@
   //   return count;
   // };
 }
+
+{
+  // 2325. Decode the Message
+  // var replaceDigits = function (s) {
+  //   let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  //   let ans = [];
+  //   let res = [];
+  //   for (let i = 0; i < alphabet.length; i++) {
+  //     if (alphabet.includes(s[i])) {
+  //       ans.push(s[i]);
+  //     } else {
+  //       ans.push(alphabet.indexOf(s[i - 1]));
+  //     }
+  //   }
+  //   ans = ans.filter((i) => i !== -1);
+  //   for (let i = 0; i < ans.length; i++) {
+  //     if (alphabet.includes(ans[i])) {
+  //       res.push(ans[i]);
+  //     } else {
+  //       res.push(alphabet[i]);
+  //     }
+  //   }
+  //   return res.join("");
+  // };
+  // console.log(replaceDigits("a1b2c3d4e"));
+}
+{
+  // 2108. Find First Palindromic Strng in the Array
+  // var firstPalindrome = function (words) {
+  //   let palindromes = [];
+  //   for (let i = 0; i < words.length; i++) {
+  //     if (words[i] === words[i].toString().split("").reverse().join("")) {
+  //       palindromes.ipush(words[i]);
+  //     }
+  //   }
+  //   return palindromes[0];
+  // };
+}
+{
+  // 645. Set Mismatch
+  // var findErrorNums = function (nums) {
+  //   let max = Math.max(...nums);
+  //   let realNums = [];
+  //   let res = [];
+  //   for (let i = 1; i <= max; i++) {
+  //     realNums.push(i);
+  //   }
+  //   for (let i = 0; i < nums.length; i++) {
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       if (nums[i] === nums[j]) {
+  //         res.unshift(nums[i]);
+  //       }
+  //     }
+  //     if (!nums.includes(realNums[i])) {
+  //       res.push(realNums[i]);
+  //     }
+  //   }
+  //   if (res.includes(undefined)) {
+  //     res.pop();
+  //     res.push(max + 1);
+  //   }
+  //   return res;
+  // };
+}

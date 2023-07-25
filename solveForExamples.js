@@ -2350,18 +2350,7 @@
   //   return count;
   // };
 }
-{
-  {
-    {
-      {
-        {
-          {
-          }
-        }
-      }
-    }
-  }
-}
+
 {
   // 2325. Decode the Message
   // var replaceDigits = function (s) {
@@ -2388,14 +2377,17 @@
   // console.log(replaceDigits("a1b2c3d4e"));
 }
 {
-  // 2108. Find First Palindromic String in the Array
+  // 2108. Find First Palindromic Strng in the Array
   // var firstPalindrome = function (words) {
   //   let palindromes = [];
   //   for (let i = 0; i < words.length; i++) {
   //     if (words[i] === words[i].toString().split("").reverse().join("")) {
-  //       palindromes.push(words[i]);
+  //       palindromes.ipush(words[i]);
   //     }
   //   }
   //   return palindromes[0];
   // };
+}
+{
+  // 2540. Minimum Common Value
 }

@@ -2414,3 +2414,94 @@
   //   return res;
   // };
 }
+{
+  // 2656. Maximum Sum With Exactly K Elements
+  // var maximizeSum = function (nums, k) {
+  //   let max = Math.max(...nums);
+  //   let sum = max;
+  //   for (let i = 1; i < k; i++) {
+  //     sum += max + i;
+  //   }
+  //   return sum;
+  // };
+}
+{
+  // 8. String to Integer (atoi)
+  // var myAtoi = function (s) {
+  //   let output = "";
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s[i] !== NaN) {
+  //       output += s[i];
+  //     }
+  //   }
+  //   let res = parseInt(output) ? parseInt(output) : 0;
+  //   if (res > Math.pow(2, 31) - 1) {
+  //     return Math.pow(2, 31) - 1;
+  //   } else if (res < -1 * Math.pow(2, 31)) {
+  //     return -1 * Math.pow(2, 31);
+  //   } else {
+  //     return res;
+  //   }
+  // };
+}
+{
+  // 1221. Split a String in Balanced Strings
+  // var balancedStringSplit = function (s) {
+  //   let count = 0;
+  //   let balance = 0;
+  //   for (let i = 0; i < s.length; i++) {
+  //     if (s[i] === "R") balance -= 1;
+  //     else if (s[i] === "L") balance += 1;
+  //     if (balance == 0) count++;
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 804. Unique Morse Code Words
+  // var uniqueMorseRepresentations = function (words) {
+  //   let letters = {
+  //     a: ".-",
+  //     b: "-...",
+  //     c: "-.-.",
+  //     d: "-..",
+  //     e: ".",
+  //     f: "..-.",
+  //     g: "--.",
+  //     h: "....",
+  //     i: "..",
+  //     j: ".---",
+  //     k: "-.-",
+  //     l: ".-..",
+  //     m: "--",
+  //     n: "-.",
+  //     o: "---",
+  //     p: ".--.",
+  //     q: "--.-",
+  //     r: ".-.",
+  //     s: "...",
+  //     t: "-",
+  //     u: "..-",
+  //     v: "...-",
+  //     w: ".--",
+  //     x: "-..-",
+  //     y: "-.--",
+  //     z: "--..",
+  //   };
+  //   return new Set(
+  //     words.map((word) =>
+  //       word
+  //         .split("")
+  //         .map((letter) => letters[letter])
+  //         .join("")
+  //     )
+  //   ).size;
+  // };
+}
+{
+  // 1374. Generate a String With Characters That Have Odd Counts
+  // var generateTheString = function (n) {
+  //   return n % 2 == 0 ? `${"a".repeat(n - 1)}b` : "a".repeat(n);
+  // };
+  // console.log(generateTheString(4));
+}

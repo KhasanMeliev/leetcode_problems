@@ -2318,3 +2318,90 @@
   // };
   // console.log(numIdenticalPairs([1, 1, 1, 1]));
 }
+{
+  // 1207. Unique Number of Occurrences
+  // var uniqueOccurrences = function (arr) {
+  //   const count = arr.reduce((acc, curr) => {
+  //     if (curr in acc) {
+  //       acc[curr]++;
+  //     } else {
+  //       acc[curr] = 1;
+  //     }
+  //     return acc;
+  //   }, {});
+  //   let times = Object.values(count);
+  //   times.sort((a, b) => a - b);
+  //   for (let i = 0; i < times.length; i++) {
+  //     if (times[i] === times[i + 1]) return false;
+  //   }
+  //   return true;
+  // };
+}
+{
+  // 881. Boats to Save People
+  // var numRescueBoats = function (people, limit) {
+  //   people.sort((a, b) => a - b);
+  //   let j = people.length - 1;
+  //   for (let i = 0; i <= j; j--) {
+  //     if (people[i] + people[j] <= limit) i++;
+  //   }
+  //   return people.length - 1 - j;
+  // };
+}
+{
+  // 1502. Can Make Arithmetic Progression From Sequence
+  // var canMakeArithmeticProgression = function (arr) {
+  //   arr.sort((a, b) => b - a);
+  //   let res = [];
+  //   for (let i = 0; i < arr.length - 1; i++) {
+  //     res.push(arr[i] - arr[i + 1]);
+  //   }
+  //   return [...new Set(res)].length === 1;
+  // };
+}
+
+{
+  // 896. Monotonic Array
+  // var isMonotonic = function (nums) {
+  //   let sorted = [...nums].sort((a, b) => a - b);
+  //   let sorted2 = [...nums].sort((a, b) => b - a);
+  //   return (
+  //     nums.join("") === sorted.join("") || nums.join("") === sorted2.join("")
+  //   );
+  // };
+}
+{
+  // 2210. Count Hills and Valleys in an Array
+  // var countHillValley = function (nums) {
+  //   let count = 0;
+  //   nums = nums.filter((a, i, b) => a !== b[i + 1]);
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] > nums[i - 1] && nums[i + 1]) count++;
+  //     if (nums[i] < nums[i - 1] && nums[i] < nums[i + 1]) count++;
+  //   }
+  //   return count;
+  // };
+}
+{
+  // 2094. Finding 3-Digit Even Numbers
+  // var findEvenNumbers = function (arr) {
+  //   arr.sort((a, b) => a - b);
+  //   let map = new Map();
+  //   for (let i = 0; i < arr.length; i++) {
+  //     for (let j = 0; j < arr.length; j++) {
+  //       for (let k = 0; k < arr.length; k++) {
+  //         if (i !== j && i !== k && j !== k) {
+  //           if (arr[i] !== 0) {
+  //             let current = [arr[i], arr[j], arr[k]];
+  //             current = +current.join("");
+  //             if (current % 2 == 0) {
+  //               !map.has(current) && map.set(current);
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  //   return [...map.keys()] || [];
+  // };
+}

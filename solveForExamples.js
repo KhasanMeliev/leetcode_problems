@@ -2347,3 +2347,36 @@
   // };
   // console.log(maximumGap([3, 6, 9, 1]));
 }
+{
+  // 229. Majority Element II
+  // var majorityElement = function (nums) {
+  //   let arr = [];
+  //   let n = nums.length;
+  //   for (let i = 0; i < n; i++) {
+  //     let count = 0;
+  //     for (let j = 0; j < n; j++) {
+  //       if (nums[i] === nums[j]) count++;
+  //     }
+  //     if (count > nums.length / 3) {
+  //       arr.push(nums[i]);
+  //     }
+  //   }
+  //   return [...new Set(arr)];
+  // };
+}
+{
+  // 435. Non-overlapping Intervals
+  // var eraseOverlapIntervals = function (intervals) {
+  //   intervals.sort((a, b) => a[1] - b[1]);
+  //   let count = 1 ;
+  //   let maxEnd = intervals[0][1];
+  //   for (let i = 0; i < intervals.length; i++) {
+  //     let [start, end] = intervals[i];
+  //     if (start >= maxEnd) {
+  //       count++;
+  //       maxEnd = end;
+  //     }
+  //   }
+  //   return intervals.length - count;
+  // };
+}

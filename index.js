@@ -1,11 +1,22 @@
-var maximumGap = function (nums) {
-  if (nums.length < 2) return [];
-  nums.sort((a, b) => a - b);
-  let res = [];
-  for (let i = 0; i < nums.length - 1; i++) {
-    res.push(nums[i + 1] - nums[i]);
+var eraseOverlapIntervals = function (intervals) {
+  intervals.sort((a, b) => a[1] - b[1]);
+  let count = 1;
+  let maxEnd = intervals[0][1];
+  for (let i = 0; i < intervals.length; i++) {
+    let [start, end] = intervals[i];
+    if (start >= maxEnd) {
+      count++;
+      maxEnd = end;
+    }
   }
-  return res.sort((a, b) => a - b)[res.length - 1];
+  return intervals.length - count;
 };
 
-console.log(maximumGap([3, 6, 9, 1]));
+console.log(
+  eraseOverlapIntervals([
+    [1, 2],
+    [2, 3],
+    [3, 4],
+    [1, 3],
+  ])
+);

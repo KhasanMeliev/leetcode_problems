@@ -2237,7 +2237,7 @@
 {
   // 479. Largest Palindrome Product
   // var largestPalindrome = function (n) {
-  //   return [0, 9, 987, 123, 597, 677, 1218, 877, 475][n];x`
+  //   return [0, 9, 987, 123, 597, 677, 1218, 877, 475][n];
   // };
 }
 {
@@ -2287,222 +2287,114 @@
   // };
   // console.log(isPerfectSquare(16));
 }
+
 {
-  // 1967. Number of Strings That Appear as Substrings in Word
-  // var numOfStrings = function (patterns, word) {
+  // 896. Monotonic Array
+  // var isMonotonic = function (nums) {
+  //   let sorted = [...nums].sort((a, b) => a - b);
+  //   let sorted2 = [...nums].sort((a, b) => b - a);
+  //   return (
+  //     nums.join("") === sorted.join("") || nums.join("") === sorted2.join("")
+  //   );
+  // };
+}
+{
+  // 2210. Count Hills and Valleys in an Array
+  // var countHillValley = function (nums) {
   //   let count = 0;
-  //   for (let ptrn of patterns) {
-  //     if (word.includes(ptrn)) count++;
+  //   nums = nums.filter((a, i, b) => a !== b[i + 1]);
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (nums[i] > nums[i - 1] && nums[i + 1]) count++;
+  //     if (nums[i] < nums[i - 1] && nums[i] < nums[i + 1]) count++;
   //   }
   //   return count;
   // };
 }
 {
-  // 1446. Consecutive Characters
-  // var maxPower = function (s) {
-  //   s = s.split("");
-  //   let biggest = 0;
-  //   let count = 0;
-  //   for (let i = 0; i < s.length; i++) {
-  //     if (s[i] === s[i + 1]) {
-  //       count++;
-  //     } else {
-  //       count++;
-  //       biggest = Math.max(count, biggest);
-  //       count = 0;
-  //     }
-  //   }
-  //   return biggest;
-  // };
-  // console.log(maxPower("abbcccddddeeeeedcba"));
-}
-{
-  // 485. Max Consecutive Ones
-  // var findMaxConsecutiveOnes = function (nums) {
-  //   let biggest = 0;
-  //   let count = 0;
-  //   for (let i = 0; i < nums.length; i++) {
-  //     if (!nums.includes(1)) {
-  //       return 0;
-  //     }
-  //     if (nums[i] === nums[i + 1] && nums[i] !== 0) {
-  //       count++;
-  //     } else {
-  //       count++;
-  //       biggest = Math.max(count, biggest);
-  //       count = 0;
-  //     }
-  //   }
-  //   return biggest;
-  // };
-}
-{
-  // 1512. Number of Good Pairs
-  // var numIdenticalPairs = function (nums) {
-  //   let count = 0;
-  //   for (let i = 0; i < nums.length; i++) {
-  //     for (let j = i + 1; j < nums.length; j++) {
-  //       if (nums[i] === nums[j]) {
-  //         count++;
+  // 2094. Finding 3-Digit Even Numbers
+  // var findEvenNumbers = function (arr) {
+  //   arr.sort((a, b) => a - b);
+  //   let map = new Map();
+  //   for (let i = 0; i < arr.length; i++) {
+  //     for (let j = 0; j < arr.length; j++) {
+  //       for (let k = 0; k < arr.length; k++) {
+  //         if (i !== j && i !== k && j !== k) {
+  //           if (arr[i] !== 0) {
+  //             let current = [arr[i], arr[j], arr[k]];
+  //             current = +current.join("");
+  //             if (current % 2 == 0) {
+  //               !map.has(current) && map.set(current);
+  //             }
+  //           }
+  //         }
   //       }
   //     }
   //   }
-  //   return count;
+  //   return [...map.keys()] || [];
   // };
 }
 
 {
-  // 2325. Decode the Message
-  // var replaceDigits = function (s) {
-  //   let alphabet = "abcdefghijklmnopqrstuvwxyz";
-  //   let ans = [];
+  // 164. Maximum Gap
+  // var maximumGap = function (nums) {
+  //   if (nums.length < 2) return [];
+  //   nums.sort((a, b) => a - b);
   //   let res = [];
-  //   for (let i = 0; i < alphabet.length; i++) {
-  //     if (alphabet.includes(s[i])) {
-  //       ans.push(s[i]);
-  //     } else {
-  //       ans.push(alphabet.indexOf(s[i - 1]));
-  //     }
+  //   for (let i = 0; i < nums.length - 1; i++) {
+  //     res.push(nums[i + 1] - nums[i]);
   //   }
-  //   ans = ans.filter((i) => i !== -1);
-  //   for (let i = 0; i < ans.length; i++) {
-  //     if (alphabet.includes(ans[i])) {
-  //       res.push(ans[i]);
-  //     } else {
-  //       res.push(alphabet[i]);
-  //     }
-  //   }
-  //   return res.join("");
+  //   return res.sort((a, b) => a - b)[res.length - 1];
   // };
-  // console.log(replaceDigits("a1b2c3d4e"));
+  // console.log(maximumGap([3, 6, 9, 1]));
 }
 {
-  // 2108. Find First Palindromic Strng in the Array
-  // var firstPalindrome = function (words) {
-  //   let palindromes = [];
-  //   for (let i = 0; i < words.length; i++) {
-  //     if (words[i] === words[i].toString().split("").reverse().join("")) {
-  //       palindromes.ipush(words[i]);
+  // 229. Majority Element II
+  // var majorityElement = function (nums) {
+  //   let arr = [];
+  //   let n = nums.length;
+  //   for (let i = 0; i < n; i++) {
+  //     let count = 0;
+  //     for (let j = 0; j < n; j++) {
+  //       if (nums[i] === nums[j]) count++;
+  //     }
+  //     if (count > nums.length / 3) {
+  //       arr.push(nums[i]);
   //     }
   //   }
-  //   return palindromes[0];
+  //   return [...new Set(arr)];
   // };
 }
 {
-  // 645. Set Mismatch
-  // var findErrorNums = function (nums) {
-  //   let max = Math.max(...nums);
-  //   let realNums = [];
-  //   let res = [];
-  //   for (let i = 1; i <= max; i++) {
-  //     realNums.push(i);
+  // 435. Non-overlapping Intervals
+  // var eraseOverlapIntervals = function (intervals) {
+  //   intervals.sort((a, b) => a[1] - b[1]);
+  //   let count = 1 ;
+  //   let maxEnd = intervals[0][1];
+  //   for (let i = 0; i < intervals.length; i++) {
+  //     let [start, end] = intervals[i];
+  //     if (start >= maxEnd) {
+  //       count++;
+  //       maxEnd = end;
+  //     }
   //   }
+  //   return intervals.length - count;
+  // };
+}
+{
+  // 532. K-diff Pairs in an Array
+  // var findPairs = function (nums, k) {
+  //   nums.sort((a, b) => a - b);
+  //   let arr = [];
   //   for (let i = 0; i < nums.length; i++) {
-  //     for (let j = i + 1; j < nums.length; j++) {
-  //       if (nums[i] === nums[j]) {
-  //         res.unshift(nums[i]);
+  //     if (k === 0) {
+  //       if (nums[i + 1] - nums[i] === 0) {
+  //         arr.push(nums[i]);
   //       }
   //     }
-  //     if (!nums.includes(realNums[i])) {
-  //       res.push(realNums[i]);
+  //     if (k !== 0 && nums.includes(nums[i] + k)) {
+  //       arr.push(nums[i]);
   //     }
   //   }
-  //   if (res.includes(undefined)) {
-  //     res.pop();
-  //     res.push(max + 1);
-  //   }
-  //   return res;
+  //   return [...new Set(arr)].length;
   // };
 }
-{
-  // 2656. Maximum Sum With Exactly K Elements
-  // var maximizeSum = function (nums, k) {
-  //   let max = Math.max(...nums);
-  //   let sum = max;
-  //   for (let i = 1; i < k; i++) {
-  //     sum += max + i;
-  //   }
-  //   return sum;
-  // };
-}
-{
-  // 8. String to Integer (atoi)
-  // var myAtoi = function (s) {
-  //   let output = "";
-  //   for (let i = 0; i < s.length; i++) {
-  //     if (s[i] !== NaN) {
-  //       output += s[i];
-  //     }
-  //   }
-  //   let res = parseInt(output) ? parseInt(output) : 0;
-  //   if (res > Math.pow(2, 31) - 1) {
-  //     return Math.pow(2, 31) - 1;
-  //   } else if (res < -1 * Math.pow(2, 31)) {
-  //     return -1 * Math.pow(2, 31);
-  //   } else {
-  //     return res;
-  //   }
-  // };
-}
-{
-  // 1221. Split a String in Balanced Strings
-  // var balancedStringSplit = function (s) {
-  //   let count = 0;
-  //   let balance = 0;
-  //   for (let i = 0; i < s.length; i++) {
-  //     if (s[i] === "R") balance -= 1;
-  //     else if (s[i] === "L") balance += 1;
-  //     if (balance == 0) count++;
-  //   }
-  //   return count;
-  // };
-}
-{
-  // 804. Unique Morse Code Words
-  // var uniqueMorseRepresentations = function (words) {
-  //   let letters = {
-  //     a: ".-",
-  //     b: "-...",
-  //     c: "-.-.",
-  //     d: "-..",
-  //     e: ".",
-  //     f: "..-.",
-  //     g: "--.",
-  //     h: "....",
-  //     i: "..",
-  //     j: ".---",
-  //     k: "-.-",
-  //     l: ".-..",
-  //     m: "--",
-  //     n: "-.",
-  //     o: "---",
-  //     p: ".--.",
-  //     q: "--.-",
-  //     r: ".-.",
-  //     s: "...",
-  //     t: "-",
-  //     u: "..-",
-  //     v: "...-",
-  //     w: ".--",
-  //     x: "-..-",
-  //     y: "-.--",
-  //     z: "--..",
-  //   };
-  //   return new Set(
-  //     words.map((word) =>
-  //       word
-  //         .split("")
-  //         .map((letter) => letters[letter])
-  //         .join("")
-  //     )
-  //   ).size;
-  // };
-}
-{
-  // 1374. Generate a String With Characters That Have Odd Counts
-  // var generateTheString = function (n) {
-  //   return n % 2 == 0 ? `${"a".repeat(n - 1)}b` : "a".repeat(n);
-  // };
-  // console.log(generateTheString(4));
-}
-

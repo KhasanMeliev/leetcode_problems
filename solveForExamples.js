@@ -2380,3 +2380,21 @@
   //   return intervals.length - count;
   // };
 }
+{
+  // 532. K-diff Pairs in an Array
+  // var findPairs = function (nums, k) {
+  //   nums.sort((a, b) => a - b);
+  //   let arr = [];
+  //   for (let i = 0; i < nums.length; i++) {
+  //     if (k === 0) {
+  //       if (nums[i + 1] - nums[i] === 0) {
+  //         arr.push(nums[i]);
+  //       }
+  //     }
+  //     if (k !== 0 && nums.includes(nums[i] + k)) {
+  //       arr.push(nums[i]);
+  //     }
+  //   }
+  //   return [...new Set(arr)].length;
+  // };
+}

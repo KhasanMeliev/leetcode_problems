@@ -1,17 +1,17 @@
-def binary_search(arr):
-    left, right = 0, len(arr) - 1
-    diff = (arr[-1] - arr[0]) // len(arr)
+def bin_search(n):
+    left, right = 1, n // 2
+    res = 0
     while left <= right:
         mid = (left + right) // 2
-        if mid + 1 < len(arr) and arr[mid + 1] - arr[mid] != diff:
-            return arr[mid + 1] - diff
-        if mid - 1 >= 0 and arr[mid] - arr[mid - 1] != diff:
-            return arr[mid - 1] + diff
-        if arr[mid] - arr[0] != (mid - 0) * diff:
-            right = mid - 1
-        else:
+        sqr = mid**2
+        if sqr == n:
+            return mid
+        elif sqr < n:
             left = mid + 1
-    return -1
+            res = mid
+        else:
+            right = mid - 1
+    return res
 
 
-print(binary_search([5, 7, 9, 11, 15]))
+print(bin_search())

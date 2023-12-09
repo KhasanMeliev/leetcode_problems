@@ -1,17 +1,6 @@
-def bin_search(n):
-    left, right = 1, n // 2
-    res = 0
-    while left <= right:
-        mid = (left + right) // 2
-        sqr = mid**2
-        if sqr == n:
-            return mid
-        elif sqr < n:
-            left = mid + 1
-            res = mid
-        else:
-            right = mid - 1
-    return res
+arr = [1, 2, 2, 3, 4]
 
+seen = set()
+res = next(i for i in arr if i in seen or seen.add(i))
 
-print(bin_search())
+print(res)

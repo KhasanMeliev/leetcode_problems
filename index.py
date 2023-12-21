@@ -1,19 +1,7 @@
-arr = [6, 5, 4, 3, 2, 3, 2]
-
-
-def func(arr, left, right):
-    mid = (left + right) // 2
-    if (
-        mid == 0
-        or arr[mid - 1] < arr[mid]
-        and mid == len(arr) - 1
-        or arr[mid] > arr[mid + 1]
-    ):
-        return arr[mid]
-    elif mid > 0 and arr[mid - 1] > arr[mid]:
-        return func(arr, left, right - 1)
-    else:
-        return func(arr, left + 1, right)
-
-
-print(func(arr, 0, len(arr) - 1))
+arr = [1, 4, 5, 10]
+res = -1
+for i in range(len(arr)):
+    for j in range(i, len(arr)):
+        if arr[j] > arr[i]:
+            res = max(res, arr[j] - arr[i])
+print(res)
